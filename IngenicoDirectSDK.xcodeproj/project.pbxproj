@@ -1,0 +1,1520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F739BB4A24C57C6000FFE16B /* IDBase64TestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BB4924C57C6000FFE16B /* IDBase64TestCase.m */; };
+		F739BB4C24C57CE200FFE16B /* IDBasicPaymentGroupConverterTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BB4B24C57CE200FFE16B /* IDBasicPaymentGroupConverterTestCase.m */; };
+		F739BB4E24C5814600FFE16B /* IDBasicPaymentProductConverterTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BB4D24C5814600FFE16B /* IDBasicPaymentProductConverterTestCase.m */; };
+		F739BB5024C5817B00FFE16B /* IDPaymentGroupConverterTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BB4F24C5817B00FFE16B /* IDPaymentGroupConverterTestCase.m */; };
+		F739BB5224C5823F00FFE16B /* IDPaymentGroupsConverterTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BB5124C5823F00FFE16B /* IDPaymentGroupsConverterTestCase.m */; };
+		F739BB5424C5827500FFE16B /* IDPaymentProductConverterTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BB5324C5827500FFE16B /* IDPaymentProductConverterTestCase.m */; };
+		F739BB5624C582AA00FFE16B /* IDPaymentProductsConverterTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BB5524C582AA00FFE16B /* IDPaymentProductsConverterTestCase.m */; };
+		F739BB5824C582F100FFE16B /* IDJOSEEncryptorTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BB5724C582F100FFE16B /* IDJOSEEncryptorTestCase.m */; };
+		F739BB5A24C5834500FFE16B /* IDEncryptorTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BB5924C5834500FFE16B /* IDEncryptorTestCase.m */; };
+		F739BB5C24C58D4E00FFE16B /* IDStringFormatterTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BB5B24C58D4E00FFE16B /* IDStringFormatterTestCase.m */; };
+		F739BB5E24C58D8100FFE16B /* IDJSONTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BB5D24C58D8100FFE16B /* IDJSONTestCase.m */; };
+		F739BB6524C58DDE00FFE16B /* certificate.pfx in Resources */ = {isa = PBXBuildFile; fileRef = F739BB5F24C58DDE00FFE16B /* certificate.pfx */; };
+		F739BB6624C58DDE00FFE16B /* paymentProductGroups.json in Resources */ = {isa = PBXBuildFile; fileRef = F739BB6024C58DDE00FFE16B /* paymentProductGroups.json */; };
+		F739BB6724C58DDE00FFE16B /* paymentProductMissingFields.json in Resources */ = {isa = PBXBuildFile; fileRef = F739BB6124C58DDE00FFE16B /* paymentProductMissingFields.json */; };
+		F739BB6824C58DDE00FFE16B /* paymentProducts.json in Resources */ = {isa = PBXBuildFile; fileRef = F739BB6224C58DDE00FFE16B /* paymentProducts.json */; };
+		F739BB6924C58DDE00FFE16B /* paymentProductGroup.json in Resources */ = {isa = PBXBuildFile; fileRef = F739BB6324C58DDE00FFE16B /* paymentProductGroup.json */; };
+		F739BB6A24C58DDE00FFE16B /* paymentProduct.json in Resources */ = {isa = PBXBuildFile; fileRef = F739BB6424C58DDE00FFE16B /* paymentProduct.json */; };
+		F739BB6C24C58DF900FFE16B /* IDNetworkingWrapperTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BB6B24C58DF900FFE16B /* IDNetworkingWrapperTestCase.m */; };
+		F739BB8024C58E6600FFE16B /* IDAccountOnFileTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BB6D24C58E6500FFE16B /* IDAccountOnFileTestCase.m */; };
+		F739BB8124C58E6600FFE16B /* IDValidatorRegularExpressionTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BB6E24C58E6500FFE16B /* IDValidatorRegularExpressionTestCase.m */; };
+		F739BB8224C58E6600FFE16B /* IDPaymentProductsTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BB6F24C58E6500FFE16B /* IDPaymentProductsTestCase.m */; };
+		F739BB8324C58E6600FFE16B /* IDValidatorRangeTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BB7024C58E6500FFE16B /* IDValidatorRangeTestCase.m */; };
+		F739BB8424C58E6600FFE16B /* IDValidatorEmailAddressTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BB7124C58E6500FFE16B /* IDValidatorEmailAddressTestCase.m */; };
+		F739BB8524C58E6600FFE16B /* IDPaymentProductFieldTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BB7224C58E6500FFE16B /* IDPaymentProductFieldTestCase.m */; };
+		F739BB8624C58E6600FFE16B /* IDValidatorExpirationDateTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BB7324C58E6500FFE16B /* IDValidatorExpirationDateTestCase.m */; };
+		F739BB8724C58E6600FFE16B /* IDPaymentProductFieldsTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BB7424C58E6500FFE16B /* IDPaymentProductFieldsTestCase.m */; };
+		F739BB8824C58E6600FFE16B /* IDAccountOnFileAttributesTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BB7524C58E6500FFE16B /* IDAccountOnFileAttributesTestCase.m */; };
+		F739BB8924C58E6600FFE16B /* IDPaymentRequestTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BB7624C58E6500FFE16B /* IDPaymentRequestTestCase.m */; };
+		F739BB8A24C58E6600FFE16B /* IDValidatorFixedListTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BB7824C58E6500FFE16B /* IDValidatorFixedListTestCase.m */; };
+		F739BB8B24C58E6600FFE16B /* IDBasicPaymentProductTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BB7924C58E6500FFE16B /* IDBasicPaymentProductTestCase.m */; };
+		F739BB8C24C58E6600FFE16B /* IDAccountsOnFileTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BB7A24C58E6500FFE16B /* IDAccountsOnFileTestCase.m */; };
+		F739BB8E24C58E6600FFE16B /* IDLabelTemplateTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BB7C24C58E6500FFE16B /* IDLabelTemplateTestCase.m */; };
+		F739BB8F24C58E6600FFE16B /* IDValidatorLengthTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BB7D24C58E6600FFE16B /* IDValidatorLengthTestCase.m */; };
+		F739BB9024C58E6600FFE16B /* IDValidatorLuhnTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BB7E24C58E6600FFE16B /* IDValidatorLuhnTestCase.m */; };
+		F739BB9124C58E6600FFE16B /* IDPaymentProductTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BB7F24C58E6600FFE16B /* IDPaymentProductTestCase.m */; };
+		F74A8CC024C19D7400FEE8F1 /* IngenicoDirectSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74A8CB624C19D7400FEE8F1 /* IngenicoDirectSDK.framework */; };
+		F74A8CC724C19D7400FEE8F1 /* IngenicoDirectSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8CB924C19D7400FEE8F1 /* IngenicoDirectSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8CDD24C1A30900FEE8F1 /* IDUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8CDB24C1A30900FEE8F1 /* IDUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8CDE24C1A30900FEE8F1 /* IDUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8CDC24C1A30900FEE8F1 /* IDUtil.m */; };
+		F74A8CE124C1A3C700FEE8F1 /* IDAssetManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8CDF24C1A3C700FEE8F1 /* IDAssetManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8CE224C1A3C700FEE8F1 /* IDAssetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8CE024C1A3C700FEE8F1 /* IDAssetManager.m */; };
+		F74A8CE524C1A45000FEE8F1 /* IDC2SCommunicatorConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8CE324C1A45000FEE8F1 /* IDC2SCommunicatorConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8CE624C1A45000FEE8F1 /* IDC2SCommunicatorConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8CE424C1A45000FEE8F1 /* IDC2SCommunicatorConfiguration.m */; };
+		F74A8CE924C1A51C00FEE8F1 /* IDC2SCommunicator.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8CE724C1A51C00FEE8F1 /* IDC2SCommunicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8CEA24C1A51C00FEE8F1 /* IDC2SCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8CE824C1A51C00FEE8F1 /* IDC2SCommunicator.m */; };
+		F74A8CED24C1A89B00FEE8F1 /* IDSession.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8CEB24C1A89B00FEE8F1 /* IDSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8CEE24C1A89B00FEE8F1 /* IDSession.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8CEC24C1A89B00FEE8F1 /* IDSession.m */; };
+		F74A8CF124C1B6F100FEE8F1 /* IDBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8CEF24C1B6F100FEE8F1 /* IDBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8CF224C1B6F100FEE8F1 /* IDBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8CF024C1B6F100FEE8F1 /* IDBase64.m */; };
+		F74A8CF524C1B77800FEE8F1 /* IDSDKConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8CF324C1B77800FEE8F1 /* IDSDKConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8D0F24C1B7CA00FEE8F1 /* IDPaymentContextConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8CF724C1B7C900FEE8F1 /* IDPaymentContextConverter.m */; };
+		F74A8D1224C1B7CA00FEE8F1 /* IDBasicPaymentItemConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8CFA24C1B7C900FEE8F1 /* IDBasicPaymentItemConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8D1324C1B7CA00FEE8F1 /* IDIINDetailsResponseConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8CFB24C1B7C900FEE8F1 /* IDIINDetailsResponseConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8D1424C1B7CA00FEE8F1 /* IDPaymentProductConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8CFC24C1B7C900FEE8F1 /* IDPaymentProductConverter.m */; };
+		F74A8D1524C1B7CA00FEE8F1 /* IDBasicPaymentItemConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8CFD24C1B7C900FEE8F1 /* IDBasicPaymentItemConverter.m */; };
+		F74A8D1724C1B7CA00FEE8F1 /* IDPaymentProductConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8CFF24C1B7CA00FEE8F1 /* IDPaymentProductConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8D1924C1B7CA00FEE8F1 /* IDPaymentItemConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8D0124C1B7CA00FEE8F1 /* IDPaymentItemConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8D1A24C1B7CA00FEE8F1 /* IDBasicPaymentProductConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8D0224C1B7CA00FEE8F1 /* IDBasicPaymentProductConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8D1B24C1B7CA00FEE8F1 /* IDBasicPaymentProductsConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8D0324C1B7CA00FEE8F1 /* IDBasicPaymentProductsConverter.m */; };
+		F74A8D1D24C1B7CA00FEE8F1 /* IDBasicPaymentProductConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8D0524C1B7CA00FEE8F1 /* IDBasicPaymentProductConverter.m */; };
+		F74A8D1F24C1B7CA00FEE8F1 /* IDIINDetailsResponseConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8D0724C1B7CA00FEE8F1 /* IDIINDetailsResponseConverter.m */; };
+		F74A8D2224C1B7CA00FEE8F1 /* IDPaymentItemConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8D0A24C1B7CA00FEE8F1 /* IDPaymentItemConverter.m */; };
+		F74A8D2424C1B7CA00FEE8F1 /* IDBasicPaymentProductsConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8D0C24C1B7CA00FEE8F1 /* IDBasicPaymentProductsConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8D2624C1B7CA00FEE8F1 /* IDPaymentContextConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8D0E24C1B7CA00FEE8F1 /* IDPaymentContextConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8D2924C1BB1300FEE8F1 /* IDEncryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8D2724C1BB1300FEE8F1 /* IDEncryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8D2A24C1BB1300FEE8F1 /* IDEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8D2824C1BB1300FEE8F1 /* IDEncryptor.m */; };
+		F74A8D2D24C1BB7F00FEE8F1 /* IDJOSEEncryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8D2B24C1BB7F00FEE8F1 /* IDJOSEEncryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8D2E24C1BB7F00FEE8F1 /* IDJOSEEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8D2C24C1BB7F00FEE8F1 /* IDJOSEEncryptor.m */; };
+		F74A8D3624C1BBDE00FEE8F1 /* IDPreferredInputType.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8D2F24C1BBDD00FEE8F1 /* IDPreferredInputType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8D3724C1BBDE00FEE8F1 /* IDAccountOnFileAttributeStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8D3024C1BBDD00FEE8F1 /* IDAccountOnFileAttributeStatus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8D3824C1BBDE00FEE8F1 /* IDFormElementType.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8D3124C1BBDD00FEE8F1 /* IDFormElementType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8D3924C1BBDE00FEE8F1 /* IDEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8D3224C1BBDD00FEE8F1 /* IDEnvironment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8D3A24C1BBDE00FEE8F1 /* IDRegion.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8D3324C1BBDD00FEE8F1 /* IDRegion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8D3B24C1BBDE00FEE8F1 /* IDIINStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8D3424C1BBDD00FEE8F1 /* IDIINStatus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8D3C24C1BBDE00FEE8F1 /* IDType.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8D3524C1BBDE00FEE8F1 /* IDType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8D3F24C1BCF100FEE8F1 /* IDStringFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8D3D24C1BCF100FEE8F1 /* IDStringFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8D4024C1BCF100FEE8F1 /* IDStringFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8D3E24C1BCF100FEE8F1 /* IDStringFormatter.m */; };
+		F74A8D4324C1BD4900FEE8F1 /* IDJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8D4124C1BD4900FEE8F1 /* IDJSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8D4424C1BD4900FEE8F1 /* IDJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8D4224C1BD4900FEE8F1 /* IDJSON.m */; };
+		F74A8D4624C1BDBB00FEE8F1 /* IDMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8D4524C1BDBB00FEE8F1 /* IDMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8EE324C1BEF400FEE8F1 /* IDNetworkingWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8EE124C1BEF400FEE8F1 /* IDNetworkingWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8EE424C1BEF400FEE8F1 /* IDNetworkingWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8EE224C1BEF400FEE8F1 /* IDNetworkingWrapper.m */; };
+		F74A8EE724C1BF0A00FEE8F1 /* IDAFNetworkingWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8EE524C1BF0A00FEE8F1 /* IDAFNetworkingWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8EE824C1BF0A00FEE8F1 /* IDAFNetworkingWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8EE624C1BF0A00FEE8F1 /* IDAFNetworkingWrapper.m */; };
+		F74A8EEB24C1BF2700FEE8F1 /* IDNetworkingActivityLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8EE924C1BF2700FEE8F1 /* IDNetworkingActivityLogger.h */; };
+		F74A8EEC24C1BF2700FEE8F1 /* IDNetworkingActivityLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8EEA24C1BF2700FEE8F1 /* IDNetworkingActivityLogger.m */; };
+		F74A8EEF24C1BF4000FEE8F1 /* IDNetworkingActivityConsoleLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8EED24C1BF4000FEE8F1 /* IDNetworkingActivityConsoleLogger.h */; };
+		F74A8EF024C1BF4000FEE8F1 /* IDNetworkingActivityConsoleLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8EEE24C1BF4000FEE8F1 /* IDNetworkingActivityConsoleLogger.m */; };
+		F74A8EFC24C1C75C00FEE8F1 /* IDPaymentContext.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8EFA24C1C75C00FEE8F1 /* IDPaymentContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8EFD24C1C75C00FEE8F1 /* IDPaymentContext.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8EFB24C1C75C00FEE8F1 /* IDPaymentContext.m */; };
+		F74A8F0024C1C77200FEE8F1 /* IDPaymentAmountOfMoney.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8EFE24C1C77100FEE8F1 /* IDPaymentAmountOfMoney.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8F0124C1C77200FEE8F1 /* IDPaymentAmountOfMoney.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8EFF24C1C77200FEE8F1 /* IDPaymentAmountOfMoney.m */; };
+		F74A8F1424C1D79400FEE8F1 /* IDIINDetailsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8F1224C1D79400FEE8F1 /* IDIINDetailsResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8F1524C1D79400FEE8F1 /* IDIINDetailsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8F1324C1D79400FEE8F1 /* IDIINDetailsResponse.m */; };
+		F74A8F1824C1D7F600FEE8F1 /* IDIINDetail.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8F1624C1D7F600FEE8F1 /* IDIINDetail.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8F1924C1D7F600FEE8F1 /* IDIINDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8F1724C1D7F600FEE8F1 /* IDIINDetail.m */; };
+		F74A8F1D24C1D88500FEE8F1 /* IDPaymentRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8F1B24C1D88500FEE8F1 /* IDPaymentRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8F1E24C1D88500FEE8F1 /* IDPaymentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8F1C24C1D88500FEE8F1 /* IDPaymentRequest.m */; };
+		F74A8F2124C1D90D00FEE8F1 /* IDPreparedPaymentRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8F1F24C1D90D00FEE8F1 /* IDPreparedPaymentRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8F2224C1D90D00FEE8F1 /* IDPreparedPaymentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8F2024C1D90D00FEE8F1 /* IDPreparedPaymentRequest.m */; };
+		F74A8F2524C1D94400FEE8F1 /* IDPublicKeyResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8F2324C1D94400FEE8F1 /* IDPublicKeyResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8F2624C1D94400FEE8F1 /* IDPublicKeyResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8F2424C1D94400FEE8F1 /* IDPublicKeyResponse.m */; };
+		F74A8F4324C1D99200FEE8F1 /* IDValidationErrorRegularExpression.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8F2724C1D98F00FEE8F1 /* IDValidationErrorRegularExpression.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8F4424C1D99200FEE8F1 /* IDValidationErrorEmailAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8F2824C1D98F00FEE8F1 /* IDValidationErrorEmailAddress.m */; };
+		F74A8F4524C1D99200FEE8F1 /* IDValidationErrorExpirationDate.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8F2924C1D98F00FEE8F1 /* IDValidationErrorExpirationDate.m */; };
+		F74A8F4624C1D99200FEE8F1 /* IDValidationErrorLuhn.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8F2A24C1D99000FEE8F1 /* IDValidationErrorLuhn.m */; };
+		F74A8F4724C1D99200FEE8F1 /* IDValidationErrorLength.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8F2B24C1D99000FEE8F1 /* IDValidationErrorLength.m */; };
+		F74A8F4824C1D99200FEE8F1 /* IDValidationErrorAllowed.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8F2C24C1D99000FEE8F1 /* IDValidationErrorAllowed.m */; };
+		F74A8F4924C1D99200FEE8F1 /* IDValidationErrorAllowed.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8F2D24C1D99000FEE8F1 /* IDValidationErrorAllowed.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8F4A24C1D99200FEE8F1 /* IDValidationErrorExpirationDate.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8F2E24C1D99000FEE8F1 /* IDValidationErrorExpirationDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8F4B24C1D99200FEE8F1 /* IDValidationErrorIsRequired.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8F2F24C1D99000FEE8F1 /* IDValidationErrorIsRequired.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8F4C24C1D99200FEE8F1 /* IDValidationError.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8F3024C1D99000FEE8F1 /* IDValidationError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8F4D24C1D99200FEE8F1 /* IDValidationErrorInteger.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8F3124C1D99000FEE8F1 /* IDValidationErrorInteger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8F4E24C1D99200FEE8F1 /* IDValidationError.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8F3224C1D99000FEE8F1 /* IDValidationError.m */; };
+		F74A8F4F24C1D99200FEE8F1 /* IDValidationErrorNumericString.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8F3324C1D99000FEE8F1 /* IDValidationErrorNumericString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8F5024C1D99200FEE8F1 /* IDValidationErrorRegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8F3424C1D99000FEE8F1 /* IDValidationErrorRegularExpression.m */; };
+		F74A8F5124C1D99200FEE8F1 /* IDValidationErrorFixedList.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8F3524C1D99000FEE8F1 /* IDValidationErrorFixedList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8F5224C1D99200FEE8F1 /* IDValidationErrorIBAN.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8F3624C1D99000FEE8F1 /* IDValidationErrorIBAN.m */; };
+		F74A8F5324C1D99200FEE8F1 /* IDValidationErrorNumericString.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8F3724C1D99100FEE8F1 /* IDValidationErrorNumericString.m */; };
+		F74A8F5424C1D99200FEE8F1 /* IDValidationErrorIsRequired.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8F3824C1D99100FEE8F1 /* IDValidationErrorIsRequired.m */; };
+		F74A8F5524C1D99200FEE8F1 /* IDValidationErrorRange.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8F3924C1D99100FEE8F1 /* IDValidationErrorRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8F5624C1D99200FEE8F1 /* IDValidationErrorEmailAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8F3A24C1D99100FEE8F1 /* IDValidationErrorEmailAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8F5724C1D99200FEE8F1 /* IDValidationErrorFixedList.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8F3B24C1D99100FEE8F1 /* IDValidationErrorFixedList.m */; };
+		F74A8F5824C1D99200FEE8F1 /* IDValidationErrorRange.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8F3C24C1D99100FEE8F1 /* IDValidationErrorRange.m */; };
+		F74A8F5924C1D99200FEE8F1 /* IDValidationErrorTermsAndConditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8F3D24C1D99100FEE8F1 /* IDValidationErrorTermsAndConditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8F5A24C1D99200FEE8F1 /* IDValidationErrorLuhn.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8F3E24C1D99100FEE8F1 /* IDValidationErrorLuhn.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8F5B24C1D99200FEE8F1 /* IDValidationErrorInteger.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8F3F24C1D99100FEE8F1 /* IDValidationErrorInteger.m */; };
+		F74A8F5C24C1D99200FEE8F1 /* IDValidationErrorIBAN.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8F4024C1D99100FEE8F1 /* IDValidationErrorIBAN.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8F5D24C1D99200FEE8F1 /* IDValidationErrorTermsAndConditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8F4124C1D99100FEE8F1 /* IDValidationErrorTermsAndConditions.m */; };
+		F74A8F5E24C1D99200FEE8F1 /* IDValidationErrorLength.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8F4224C1D99100FEE8F1 /* IDValidationErrorLength.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8F7724C1DC8B00FEE8F1 /* IDValidatorFixedList.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8F5F24C1DC8900FEE8F1 /* IDValidatorFixedList.m */; };
+		F74A8F7824C1DC8B00FEE8F1 /* IDValidatorLuhn.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8F6024C1DC8900FEE8F1 /* IDValidatorLuhn.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8F7924C1DC8B00FEE8F1 /* IDValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8F6124C1DC8900FEE8F1 /* IDValidator.m */; };
+		F74A8F7A24C1DC8B00FEE8F1 /* IDValidatorEmailAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8F6224C1DC8900FEE8F1 /* IDValidatorEmailAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8F7B24C1DC8B00FEE8F1 /* IDValidatorRange.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8F6324C1DC8900FEE8F1 /* IDValidatorRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8F7C24C1DC8B00FEE8F1 /* IDValidatorRegularExpression.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8F6424C1DC8A00FEE8F1 /* IDValidatorRegularExpression.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8F7D24C1DC8B00FEE8F1 /* IDValidatorRegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8F6524C1DC8A00FEE8F1 /* IDValidatorRegularExpression.m */; };
+		F74A8F7E24C1DC8B00FEE8F1 /* IDValidators.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8F6624C1DC8A00FEE8F1 /* IDValidators.m */; };
+		F74A8F7F24C1DC8B00FEE8F1 /* IDValidatorTermsAndConditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8F6724C1DC8A00FEE8F1 /* IDValidatorTermsAndConditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8F8024C1DC8B00FEE8F1 /* IDValidatorLuhn.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8F6824C1DC8A00FEE8F1 /* IDValidatorLuhn.m */; };
+		F74A8F8124C1DC8B00FEE8F1 /* IDValueMappingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8F6924C1DC8A00FEE8F1 /* IDValueMappingItem.m */; };
+		F74A8F8224C1DC8B00FEE8F1 /* IDValidators.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8F6A24C1DC8A00FEE8F1 /* IDValidators.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8F8324C1DC8B00FEE8F1 /* IDValueMappingItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8F6B24C1DC8A00FEE8F1 /* IDValueMappingItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8F8424C1DC8B00FEE8F1 /* IDValidatorRange.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8F6C24C1DC8A00FEE8F1 /* IDValidatorRange.m */; };
+		F74A8F8524C1DC8B00FEE8F1 /* IDValidatorTermsAndConditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8F6D24C1DC8A00FEE8F1 /* IDValidatorTermsAndConditions.m */; };
+		F74A8F8624C1DC8B00FEE8F1 /* IDValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8F6E24C1DC8A00FEE8F1 /* IDValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8F8924C1DC8B00FEE8F1 /* IDValidatorExpirationDate.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8F7124C1DC8B00FEE8F1 /* IDValidatorExpirationDate.m */; };
+		F74A8F8A24C1DC8B00FEE8F1 /* IDValidatorLength.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8F7224C1DC8B00FEE8F1 /* IDValidatorLength.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8F8B24C1DC8B00FEE8F1 /* IDValidatorExpirationDate.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8F7324C1DC8B00FEE8F1 /* IDValidatorExpirationDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8F8C24C1DC8B00FEE8F1 /* IDValidatorLength.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8F7424C1DC8B00FEE8F1 /* IDValidatorLength.m */; };
+		F74A8F8D24C1DC8B00FEE8F1 /* IDValidatorFixedList.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8F7524C1DC8B00FEE8F1 /* IDValidatorFixedList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8F8E24C1DC8B00FEE8F1 /* IDValidatorEmailAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8F7624C1DC8B00FEE8F1 /* IDValidatorEmailAddress.m */; };
+		F74A8F9F24C1E15A00FEE8F1 /* IDPaymentProduct302SpecificData.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8F8F24C1E15800FEE8F1 /* IDPaymentProduct302SpecificData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8FA124C1E15A00FEE8F1 /* IDPaymentProduct302SpecificData.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8F9124C1E15800FEE8F1 /* IDPaymentProduct302SpecificData.m */; };
+		F74A8FA424C1E15A00FEE8F1 /* IDDisplayElementType.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8F9424C1E15900FEE8F1 /* IDDisplayElementType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8FA724C1E15A00FEE8F1 /* IDDisplayElement.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8F9724C1E15900FEE8F1 /* IDDisplayElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8FA924C1E15A00FEE8F1 /* IDDisplayElement.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8F9924C1E15900FEE8F1 /* IDDisplayElement.m */; };
+		F74A8FAC24C1E15A00FEE8F1 /* IDDisplayElementsConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8F9C24C1E15900FEE8F1 /* IDDisplayElementsConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A8FAD24C1E15A00FEE8F1 /* IDDisplayElementsConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A8F9D24C1E15A00FEE8F1 /* IDDisplayElementsConverter.m */; };
+		F74A916E24C1E19800FEE8F1 /* IDBasicPaymentProductGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A914224C1E19300FEE8F1 /* IDBasicPaymentProductGroup.m */; };
+		F74A916F24C1E19800FEE8F1 /* IDLabelTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A914324C1E19300FEE8F1 /* IDLabelTemplate.m */; };
+		F74A917024C1E19800FEE8F1 /* IDBasicPaymentProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A914424C1E19300FEE8F1 /* IDBasicPaymentProduct.m */; };
+		F74A917124C1E19800FEE8F1 /* IDBasicPaymentProducts.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A914524C1E19300FEE8F1 /* IDBasicPaymentProducts.m */; };
+		F74A917224C1E19800FEE8F1 /* IDPaymentProductField.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A914624C1E19300FEE8F1 /* IDPaymentProductField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A917324C1E19800FEE8F1 /* IDPaymentProductField.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A914724C1E19400FEE8F1 /* IDPaymentProductField.m */; };
+		F74A917424C1E19800FEE8F1 /* IDAccountOnFileAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A914824C1E19400FEE8F1 /* IDAccountOnFileAttributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A917524C1E19800FEE8F1 /* IDAccountOnFileAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A914924C1E19400FEE8F1 /* IDAccountOnFileAttribute.m */; };
+		F74A917624C1E19800FEE8F1 /* IDPaymentProduct.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A914A24C1E19400FEE8F1 /* IDPaymentProduct.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A917724C1E19800FEE8F1 /* IDToolTip.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A914B24C1E19400FEE8F1 /* IDToolTip.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A917824C1E19800FEE8F1 /* IDPaymentItemDisplayHints.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A914C24C1E19400FEE8F1 /* IDPaymentItemDisplayHints.m */; };
+		F74A917924C1E19800FEE8F1 /* IDToolTip.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A914D24C1E19400FEE8F1 /* IDToolTip.m */; };
+		F74A917A24C1E19800FEE8F1 /* IDBasicPaymentProductGroups.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A914E24C1E19400FEE8F1 /* IDBasicPaymentProductGroups.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A917B24C1E19800FEE8F1 /* IDAccountOnFileAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A914F24C1E19400FEE8F1 /* IDAccountOnFileAttributes.m */; };
+		F74A917C24C1E19800FEE8F1 /* IDFormElement.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A915024C1E19500FEE8F1 /* IDFormElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A917D24C1E19800FEE8F1 /* IDAccountOnFile.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A915124C1E19500FEE8F1 /* IDAccountOnFile.m */; };
+		F74A917E24C1E19800FEE8F1 /* IDBasicPaymentProduct.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A915224C1E19500FEE8F1 /* IDBasicPaymentProduct.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A917F24C1E19800FEE8F1 /* IDDataRestrictions.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A915324C1E19500FEE8F1 /* IDDataRestrictions.m */; };
+		F74A918024C1E19800FEE8F1 /* IDPaymentProductFieldDisplayHints.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A915424C1E19500FEE8F1 /* IDPaymentProductFieldDisplayHints.m */; };
+		F74A918124C1E19800FEE8F1 /* IDDataRestrictions.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A915524C1E19500FEE8F1 /* IDDataRestrictions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A918224C1E19800FEE8F1 /* IDAccountOnFile.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A915624C1E19500FEE8F1 /* IDAccountOnFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A918324C1E19800FEE8F1 /* IDPaymentProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A915724C1E19500FEE8F1 /* IDPaymentProduct.m */; };
+		F74A918424C1E19800FEE8F1 /* IDPaymentProductNetworks.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A915824C1E19500FEE8F1 /* IDPaymentProductNetworks.m */; };
+		F74A918524C1E19800FEE8F1 /* IDAccountOnFileDisplayHints.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A915924C1E19500FEE8F1 /* IDAccountOnFileDisplayHints.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A918624C1E19800FEE8F1 /* IDPaymentProductFields.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A915A24C1E19600FEE8F1 /* IDPaymentProductFields.m */; };
+		F74A918724C1E19800FEE8F1 /* IDAccountOnFileAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A915B24C1E19600FEE8F1 /* IDAccountOnFileAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A918824C1E19800FEE8F1 /* IDPaymentProductGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A915C24C1E19600FEE8F1 /* IDPaymentProductGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A918924C1E19800FEE8F1 /* IDBasicPaymentProductGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A915D24C1E19600FEE8F1 /* IDBasicPaymentProductGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A918A24C1E19800FEE8F1 /* IDBasicPaymentProductGroups.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A915E24C1E19600FEE8F1 /* IDBasicPaymentProductGroups.m */; };
+		F74A918B24C1E19800FEE8F1 /* IDPaymentProductNetworks.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A915F24C1E19600FEE8F1 /* IDPaymentProductNetworks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A918C24C1E19800FEE8F1 /* IDPaymentItems.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A916024C1E19600FEE8F1 /* IDPaymentItems.m */; };
+		F74A918D24C1E19800FEE8F1 /* IDLabelTemplateItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A916124C1E19600FEE8F1 /* IDLabelTemplateItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A918E24C1E19800FEE8F1 /* IDPaymentItems.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A916224C1E19700FEE8F1 /* IDPaymentItems.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A918F24C1E19800FEE8F1 /* IDFormElement.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A916324C1E19700FEE8F1 /* IDFormElement.m */; };
+		F74A919024C1E19800FEE8F1 /* IDPaymentProductFields.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A916424C1E19700FEE8F1 /* IDPaymentProductFields.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A919124C1E19800FEE8F1 /* IDPaymentProductGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A916524C1E19700FEE8F1 /* IDPaymentProductGroup.m */; };
+		F74A919224C1E19800FEE8F1 /* IDPaymentItemDisplayHints.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A916624C1E19700FEE8F1 /* IDPaymentItemDisplayHints.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A919324C1E19800FEE8F1 /* IDAccountsOnFile.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A916724C1E19700FEE8F1 /* IDAccountsOnFile.m */; };
+		F74A919424C1E19800FEE8F1 /* IDLabelTemplateItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A916824C1E19700FEE8F1 /* IDLabelTemplateItem.m */; };
+		F74A919524C1E19800FEE8F1 /* IDLabelTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A916924C1E19700FEE8F1 /* IDLabelTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A919624C1E19800FEE8F1 /* IDAccountsOnFile.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A916A24C1E19700FEE8F1 /* IDAccountsOnFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A919724C1E19800FEE8F1 /* IDAccountOnFileDisplayHints.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A916B24C1E19800FEE8F1 /* IDAccountOnFileDisplayHints.m */; };
+		F74A919824C1E19800FEE8F1 /* IDBasicPaymentProducts.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A916C24C1E19800FEE8F1 /* IDBasicPaymentProducts.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A919924C1E19800FEE8F1 /* IDPaymentProductFieldDisplayHints.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A916D24C1E19800FEE8F1 /* IDPaymentProductFieldDisplayHints.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A919D24C1EF5900FEE8F1 /* IDValidatorIBAN.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A919B24C1EF5900FEE8F1 /* IDValidatorIBAN.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A919E24C1EF5900FEE8F1 /* IDValidatorIBAN.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A919C24C1EF5900FEE8F1 /* IDValidatorIBAN.m */; };
+		F74A91A924C2F54F00FEE8F1 /* IDUtilTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A91A824C2F54F00FEE8F1 /* IDUtilTestCase.m */; };
+		F74A91AB24C2F5A400FEE8F1 /* IDC2SCommunicatorConfigurationTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A91AA24C2F5A400FEE8F1 /* IDC2SCommunicatorConfigurationTestCase.m */; };
+		F74A91AD24C2F5E700FEE8F1 /* IDC2SCommunicatorTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A91AC24C2F5E700FEE8F1 /* IDC2SCommunicatorTestCase.m */; };
+		F74A91AF24C2FFCD00FEE8F1 /* IDBasicPaymentItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8EDA24C1BE0800FEE8F1 /* IDBasicPaymentItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A91B024C2FFEA00FEE8F1 /* IDPaymentItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A8EDB24C1BE2F00FEE8F1 /* IDPaymentItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74A91B324C3014600FEE8F1 /* IDStubUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A91B224C3014600FEE8F1 /* IDStubUtil.m */; };
+		F74DA18124CF05B8002B6DE6 /* IngenicoDirectSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F74DA18024CF05B8002B6DE6 /* IngenicoDirectSDK.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F74A8CC124C19D7400FEE8F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F74A8CAD24C19D7400FEE8F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F74A8CB524C19D7400FEE8F1;
+			remoteInfo = IngenicoDirectSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F739BB4924C57C6000FFE16B /* IDBase64TestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDBase64TestCase.m; sourceTree = "<group>"; };
+		F739BB4B24C57CE200FFE16B /* IDBasicPaymentGroupConverterTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDBasicPaymentGroupConverterTestCase.m; sourceTree = "<group>"; };
+		F739BB4D24C5814600FFE16B /* IDBasicPaymentProductConverterTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDBasicPaymentProductConverterTestCase.m; sourceTree = "<group>"; };
+		F739BB4F24C5817B00FFE16B /* IDPaymentGroupConverterTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDPaymentGroupConverterTestCase.m; sourceTree = "<group>"; };
+		F739BB5124C5823F00FFE16B /* IDPaymentGroupsConverterTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDPaymentGroupsConverterTestCase.m; sourceTree = "<group>"; };
+		F739BB5324C5827500FFE16B /* IDPaymentProductConverterTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDPaymentProductConverterTestCase.m; sourceTree = "<group>"; };
+		F739BB5524C582AA00FFE16B /* IDPaymentProductsConverterTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDPaymentProductsConverterTestCase.m; sourceTree = "<group>"; };
+		F739BB5724C582F100FFE16B /* IDJOSEEncryptorTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDJOSEEncryptorTestCase.m; sourceTree = "<group>"; };
+		F739BB5924C5834500FFE16B /* IDEncryptorTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDEncryptorTestCase.m; sourceTree = "<group>"; };
+		F739BB5B24C58D4E00FFE16B /* IDStringFormatterTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDStringFormatterTestCase.m; sourceTree = "<group>"; };
+		F739BB5D24C58D8100FFE16B /* IDJSONTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDJSONTestCase.m; sourceTree = "<group>"; };
+		F739BB5F24C58DDE00FFE16B /* certificate.pfx */ = {isa = PBXFileReference; lastKnownFileType = file; path = certificate.pfx; sourceTree = "<group>"; };
+		F739BB6024C58DDE00FFE16B /* paymentProductGroups.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = paymentProductGroups.json; sourceTree = "<group>"; };
+		F739BB6124C58DDE00FFE16B /* paymentProductMissingFields.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = paymentProductMissingFields.json; sourceTree = "<group>"; };
+		F739BB6224C58DDE00FFE16B /* paymentProducts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = paymentProducts.json; sourceTree = "<group>"; };
+		F739BB6324C58DDE00FFE16B /* paymentProductGroup.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = paymentProductGroup.json; sourceTree = "<group>"; };
+		F739BB6424C58DDE00FFE16B /* paymentProduct.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = paymentProduct.json; sourceTree = "<group>"; };
+		F739BB6B24C58DF900FFE16B /* IDNetworkingWrapperTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDNetworkingWrapperTestCase.m; sourceTree = "<group>"; };
+		F739BB6D24C58E6500FFE16B /* IDAccountOnFileTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDAccountOnFileTestCase.m; sourceTree = "<group>"; };
+		F739BB6E24C58E6500FFE16B /* IDValidatorRegularExpressionTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDValidatorRegularExpressionTestCase.m; sourceTree = "<group>"; };
+		F739BB6F24C58E6500FFE16B /* IDPaymentProductsTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDPaymentProductsTestCase.m; sourceTree = "<group>"; };
+		F739BB7024C58E6500FFE16B /* IDValidatorRangeTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDValidatorRangeTestCase.m; sourceTree = "<group>"; };
+		F739BB7124C58E6500FFE16B /* IDValidatorEmailAddressTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDValidatorEmailAddressTestCase.m; sourceTree = "<group>"; };
+		F739BB7224C58E6500FFE16B /* IDPaymentProductFieldTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDPaymentProductFieldTestCase.m; sourceTree = "<group>"; };
+		F739BB7324C58E6500FFE16B /* IDValidatorExpirationDateTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDValidatorExpirationDateTestCase.m; sourceTree = "<group>"; };
+		F739BB7424C58E6500FFE16B /* IDPaymentProductFieldsTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDPaymentProductFieldsTestCase.m; sourceTree = "<group>"; };
+		F739BB7524C58E6500FFE16B /* IDAccountOnFileAttributesTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDAccountOnFileAttributesTestCase.m; sourceTree = "<group>"; };
+		F739BB7624C58E6500FFE16B /* IDPaymentRequestTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDPaymentRequestTestCase.m; sourceTree = "<group>"; };
+		F739BB7824C58E6500FFE16B /* IDValidatorFixedListTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDValidatorFixedListTestCase.m; sourceTree = "<group>"; };
+		F739BB7924C58E6500FFE16B /* IDBasicPaymentProductTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDBasicPaymentProductTestCase.m; sourceTree = "<group>"; };
+		F739BB7A24C58E6500FFE16B /* IDAccountsOnFileTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDAccountsOnFileTestCase.m; sourceTree = "<group>"; };
+		F739BB7C24C58E6500FFE16B /* IDLabelTemplateTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDLabelTemplateTestCase.m; sourceTree = "<group>"; };
+		F739BB7D24C58E6600FFE16B /* IDValidatorLengthTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDValidatorLengthTestCase.m; sourceTree = "<group>"; };
+		F739BB7E24C58E6600FFE16B /* IDValidatorLuhnTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDValidatorLuhnTestCase.m; sourceTree = "<group>"; };
+		F739BB7F24C58E6600FFE16B /* IDPaymentProductTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDPaymentProductTestCase.m; sourceTree = "<group>"; };
+		F74A8CB624C19D7400FEE8F1 /* IngenicoDirectSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IngenicoDirectSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F74A8CB924C19D7400FEE8F1 /* IngenicoDirectSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IngenicoDirectSDK.h; sourceTree = "<group>"; };
+		F74A8CBA24C19D7400FEE8F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F74A8CBF24C19D7400FEE8F1 /* IngenicoDirectSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IngenicoDirectSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F74A8CC624C19D7400FEE8F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F74A8CDB24C1A30900FEE8F1 /* IDUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDUtil.h; sourceTree = "<group>"; };
+		F74A8CDC24C1A30900FEE8F1 /* IDUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDUtil.m; sourceTree = "<group>"; };
+		F74A8CDF24C1A3C700FEE8F1 /* IDAssetManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDAssetManager.h; sourceTree = "<group>"; };
+		F74A8CE024C1A3C700FEE8F1 /* IDAssetManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDAssetManager.m; sourceTree = "<group>"; };
+		F74A8CE324C1A45000FEE8F1 /* IDC2SCommunicatorConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDC2SCommunicatorConfiguration.h; sourceTree = "<group>"; };
+		F74A8CE424C1A45000FEE8F1 /* IDC2SCommunicatorConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDC2SCommunicatorConfiguration.m; sourceTree = "<group>"; };
+		F74A8CE724C1A51C00FEE8F1 /* IDC2SCommunicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDC2SCommunicator.h; sourceTree = "<group>"; };
+		F74A8CE824C1A51C00FEE8F1 /* IDC2SCommunicator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDC2SCommunicator.m; sourceTree = "<group>"; };
+		F74A8CEB24C1A89B00FEE8F1 /* IDSession.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDSession.h; sourceTree = "<group>"; };
+		F74A8CEC24C1A89B00FEE8F1 /* IDSession.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDSession.m; sourceTree = "<group>"; };
+		F74A8CEF24C1B6F100FEE8F1 /* IDBase64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDBase64.h; sourceTree = "<group>"; };
+		F74A8CF024C1B6F100FEE8F1 /* IDBase64.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDBase64.m; sourceTree = "<group>"; };
+		F74A8CF324C1B77800FEE8F1 /* IDSDKConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDSDKConstants.h; sourceTree = "<group>"; };
+		F74A8CF724C1B7C900FEE8F1 /* IDPaymentContextConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDPaymentContextConverter.m; sourceTree = "<group>"; };
+		F74A8CFA24C1B7C900FEE8F1 /* IDBasicPaymentItemConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDBasicPaymentItemConverter.h; sourceTree = "<group>"; };
+		F74A8CFB24C1B7C900FEE8F1 /* IDIINDetailsResponseConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDIINDetailsResponseConverter.h; sourceTree = "<group>"; };
+		F74A8CFC24C1B7C900FEE8F1 /* IDPaymentProductConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDPaymentProductConverter.m; sourceTree = "<group>"; };
+		F74A8CFD24C1B7C900FEE8F1 /* IDBasicPaymentItemConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDBasicPaymentItemConverter.m; sourceTree = "<group>"; };
+		F74A8CFF24C1B7CA00FEE8F1 /* IDPaymentProductConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPaymentProductConverter.h; sourceTree = "<group>"; };
+		F74A8D0124C1B7CA00FEE8F1 /* IDPaymentItemConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPaymentItemConverter.h; sourceTree = "<group>"; };
+		F74A8D0224C1B7CA00FEE8F1 /* IDBasicPaymentProductConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDBasicPaymentProductConverter.h; sourceTree = "<group>"; };
+		F74A8D0324C1B7CA00FEE8F1 /* IDBasicPaymentProductsConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDBasicPaymentProductsConverter.m; sourceTree = "<group>"; };
+		F74A8D0524C1B7CA00FEE8F1 /* IDBasicPaymentProductConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDBasicPaymentProductConverter.m; sourceTree = "<group>"; };
+		F74A8D0724C1B7CA00FEE8F1 /* IDIINDetailsResponseConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDIINDetailsResponseConverter.m; sourceTree = "<group>"; };
+		F74A8D0A24C1B7CA00FEE8F1 /* IDPaymentItemConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDPaymentItemConverter.m; sourceTree = "<group>"; };
+		F74A8D0C24C1B7CA00FEE8F1 /* IDBasicPaymentProductsConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDBasicPaymentProductsConverter.h; sourceTree = "<group>"; };
+		F74A8D0E24C1B7CA00FEE8F1 /* IDPaymentContextConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPaymentContextConverter.h; sourceTree = "<group>"; };
+		F74A8D2724C1BB1300FEE8F1 /* IDEncryptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDEncryptor.h; sourceTree = "<group>"; };
+		F74A8D2824C1BB1300FEE8F1 /* IDEncryptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDEncryptor.m; sourceTree = "<group>"; };
+		F74A8D2B24C1BB7F00FEE8F1 /* IDJOSEEncryptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDJOSEEncryptor.h; sourceTree = "<group>"; };
+		F74A8D2C24C1BB7F00FEE8F1 /* IDJOSEEncryptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDJOSEEncryptor.m; sourceTree = "<group>"; };
+		F74A8D2F24C1BBDD00FEE8F1 /* IDPreferredInputType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPreferredInputType.h; sourceTree = "<group>"; };
+		F74A8D3024C1BBDD00FEE8F1 /* IDAccountOnFileAttributeStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDAccountOnFileAttributeStatus.h; sourceTree = "<group>"; };
+		F74A8D3124C1BBDD00FEE8F1 /* IDFormElementType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDFormElementType.h; sourceTree = "<group>"; };
+		F74A8D3224C1BBDD00FEE8F1 /* IDEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEnvironment.h; sourceTree = "<group>"; };
+		F74A8D3324C1BBDD00FEE8F1 /* IDRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDRegion.h; sourceTree = "<group>"; };
+		F74A8D3424C1BBDD00FEE8F1 /* IDIINStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDIINStatus.h; sourceTree = "<group>"; };
+		F74A8D3524C1BBDE00FEE8F1 /* IDType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDType.h; sourceTree = "<group>"; };
+		F74A8D3D24C1BCF100FEE8F1 /* IDStringFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDStringFormatter.h; sourceTree = "<group>"; };
+		F74A8D3E24C1BCF100FEE8F1 /* IDStringFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDStringFormatter.m; sourceTree = "<group>"; };
+		F74A8D4124C1BD4900FEE8F1 /* IDJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDJSON.h; sourceTree = "<group>"; };
+		F74A8D4224C1BD4900FEE8F1 /* IDJSON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDJSON.m; sourceTree = "<group>"; };
+		F74A8D4524C1BDBB00FEE8F1 /* IDMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDMacros.h; sourceTree = "<group>"; };
+		F74A8EDA24C1BE0800FEE8F1 /* IDBasicPaymentItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDBasicPaymentItem.h; sourceTree = "<group>"; };
+		F74A8EDB24C1BE2F00FEE8F1 /* IDPaymentItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDPaymentItem.h; sourceTree = "<group>"; };
+		F74A8EE124C1BEF400FEE8F1 /* IDNetworkingWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDNetworkingWrapper.h; sourceTree = "<group>"; };
+		F74A8EE224C1BEF400FEE8F1 /* IDNetworkingWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDNetworkingWrapper.m; sourceTree = "<group>"; };
+		F74A8EE524C1BF0A00FEE8F1 /* IDAFNetworkingWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDAFNetworkingWrapper.h; sourceTree = "<group>"; };
+		F74A8EE624C1BF0A00FEE8F1 /* IDAFNetworkingWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDAFNetworkingWrapper.m; sourceTree = "<group>"; };
+		F74A8EE924C1BF2700FEE8F1 /* IDNetworkingActivityLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDNetworkingActivityLogger.h; sourceTree = "<group>"; };
+		F74A8EEA24C1BF2700FEE8F1 /* IDNetworkingActivityLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDNetworkingActivityLogger.m; sourceTree = "<group>"; };
+		F74A8EED24C1BF4000FEE8F1 /* IDNetworkingActivityConsoleLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDNetworkingActivityConsoleLogger.h; sourceTree = "<group>"; };
+		F74A8EEE24C1BF4000FEE8F1 /* IDNetworkingActivityConsoleLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDNetworkingActivityConsoleLogger.m; sourceTree = "<group>"; };
+		F74A8EF124C1C04600FEE8F1 /* IDNetworkingActivityLoggerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDNetworkingActivityLoggerProtocol.h; sourceTree = "<group>"; };
+		F74A8EFA24C1C75C00FEE8F1 /* IDPaymentContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDPaymentContext.h; sourceTree = "<group>"; };
+		F74A8EFB24C1C75C00FEE8F1 /* IDPaymentContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDPaymentContext.m; sourceTree = "<group>"; };
+		F74A8EFE24C1C77100FEE8F1 /* IDPaymentAmountOfMoney.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDPaymentAmountOfMoney.h; sourceTree = "<group>"; };
+		F74A8EFF24C1C77200FEE8F1 /* IDPaymentAmountOfMoney.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDPaymentAmountOfMoney.m; sourceTree = "<group>"; };
+		F74A8F1224C1D79400FEE8F1 /* IDIINDetailsResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDIINDetailsResponse.h; sourceTree = "<group>"; };
+		F74A8F1324C1D79400FEE8F1 /* IDIINDetailsResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDIINDetailsResponse.m; sourceTree = "<group>"; };
+		F74A8F1624C1D7F600FEE8F1 /* IDIINDetail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDIINDetail.h; sourceTree = "<group>"; };
+		F74A8F1724C1D7F600FEE8F1 /* IDIINDetail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDIINDetail.m; sourceTree = "<group>"; };
+		F74A8F1B24C1D88500FEE8F1 /* IDPaymentRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDPaymentRequest.h; sourceTree = "<group>"; };
+		F74A8F1C24C1D88500FEE8F1 /* IDPaymentRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDPaymentRequest.m; sourceTree = "<group>"; };
+		F74A8F1F24C1D90D00FEE8F1 /* IDPreparedPaymentRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDPreparedPaymentRequest.h; sourceTree = "<group>"; };
+		F74A8F2024C1D90D00FEE8F1 /* IDPreparedPaymentRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDPreparedPaymentRequest.m; sourceTree = "<group>"; };
+		F74A8F2324C1D94400FEE8F1 /* IDPublicKeyResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDPublicKeyResponse.h; sourceTree = "<group>"; };
+		F74A8F2424C1D94400FEE8F1 /* IDPublicKeyResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDPublicKeyResponse.m; sourceTree = "<group>"; };
+		F74A8F2724C1D98F00FEE8F1 /* IDValidationErrorRegularExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDValidationErrorRegularExpression.h; sourceTree = "<group>"; };
+		F74A8F2824C1D98F00FEE8F1 /* IDValidationErrorEmailAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDValidationErrorEmailAddress.m; sourceTree = "<group>"; };
+		F74A8F2924C1D98F00FEE8F1 /* IDValidationErrorExpirationDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDValidationErrorExpirationDate.m; sourceTree = "<group>"; };
+		F74A8F2A24C1D99000FEE8F1 /* IDValidationErrorLuhn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDValidationErrorLuhn.m; sourceTree = "<group>"; };
+		F74A8F2B24C1D99000FEE8F1 /* IDValidationErrorLength.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDValidationErrorLength.m; sourceTree = "<group>"; };
+		F74A8F2C24C1D99000FEE8F1 /* IDValidationErrorAllowed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDValidationErrorAllowed.m; sourceTree = "<group>"; };
+		F74A8F2D24C1D99000FEE8F1 /* IDValidationErrorAllowed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDValidationErrorAllowed.h; sourceTree = "<group>"; };
+		F74A8F2E24C1D99000FEE8F1 /* IDValidationErrorExpirationDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDValidationErrorExpirationDate.h; sourceTree = "<group>"; };
+		F74A8F2F24C1D99000FEE8F1 /* IDValidationErrorIsRequired.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDValidationErrorIsRequired.h; sourceTree = "<group>"; };
+		F74A8F3024C1D99000FEE8F1 /* IDValidationError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDValidationError.h; sourceTree = "<group>"; };
+		F74A8F3124C1D99000FEE8F1 /* IDValidationErrorInteger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDValidationErrorInteger.h; sourceTree = "<group>"; };
+		F74A8F3224C1D99000FEE8F1 /* IDValidationError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDValidationError.m; sourceTree = "<group>"; };
+		F74A8F3324C1D99000FEE8F1 /* IDValidationErrorNumericString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDValidationErrorNumericString.h; sourceTree = "<group>"; };
+		F74A8F3424C1D99000FEE8F1 /* IDValidationErrorRegularExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDValidationErrorRegularExpression.m; sourceTree = "<group>"; };
+		F74A8F3524C1D99000FEE8F1 /* IDValidationErrorFixedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDValidationErrorFixedList.h; sourceTree = "<group>"; };
+		F74A8F3624C1D99000FEE8F1 /* IDValidationErrorIBAN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDValidationErrorIBAN.m; sourceTree = "<group>"; };
+		F74A8F3724C1D99100FEE8F1 /* IDValidationErrorNumericString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDValidationErrorNumericString.m; sourceTree = "<group>"; };
+		F74A8F3824C1D99100FEE8F1 /* IDValidationErrorIsRequired.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDValidationErrorIsRequired.m; sourceTree = "<group>"; };
+		F74A8F3924C1D99100FEE8F1 /* IDValidationErrorRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDValidationErrorRange.h; sourceTree = "<group>"; };
+		F74A8F3A24C1D99100FEE8F1 /* IDValidationErrorEmailAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDValidationErrorEmailAddress.h; sourceTree = "<group>"; };
+		F74A8F3B24C1D99100FEE8F1 /* IDValidationErrorFixedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDValidationErrorFixedList.m; sourceTree = "<group>"; };
+		F74A8F3C24C1D99100FEE8F1 /* IDValidationErrorRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDValidationErrorRange.m; sourceTree = "<group>"; };
+		F74A8F3D24C1D99100FEE8F1 /* IDValidationErrorTermsAndConditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDValidationErrorTermsAndConditions.h; sourceTree = "<group>"; };
+		F74A8F3E24C1D99100FEE8F1 /* IDValidationErrorLuhn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDValidationErrorLuhn.h; sourceTree = "<group>"; };
+		F74A8F3F24C1D99100FEE8F1 /* IDValidationErrorInteger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDValidationErrorInteger.m; sourceTree = "<group>"; };
+		F74A8F4024C1D99100FEE8F1 /* IDValidationErrorIBAN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDValidationErrorIBAN.h; sourceTree = "<group>"; };
+		F74A8F4124C1D99100FEE8F1 /* IDValidationErrorTermsAndConditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDValidationErrorTermsAndConditions.m; sourceTree = "<group>"; };
+		F74A8F4224C1D99100FEE8F1 /* IDValidationErrorLength.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDValidationErrorLength.h; sourceTree = "<group>"; };
+		F74A8F5F24C1DC8900FEE8F1 /* IDValidatorFixedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDValidatorFixedList.m; sourceTree = "<group>"; };
+		F74A8F6024C1DC8900FEE8F1 /* IDValidatorLuhn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDValidatorLuhn.h; sourceTree = "<group>"; };
+		F74A8F6124C1DC8900FEE8F1 /* IDValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDValidator.m; sourceTree = "<group>"; };
+		F74A8F6224C1DC8900FEE8F1 /* IDValidatorEmailAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDValidatorEmailAddress.h; sourceTree = "<group>"; };
+		F74A8F6324C1DC8900FEE8F1 /* IDValidatorRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDValidatorRange.h; sourceTree = "<group>"; };
+		F74A8F6424C1DC8A00FEE8F1 /* IDValidatorRegularExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDValidatorRegularExpression.h; sourceTree = "<group>"; };
+		F74A8F6524C1DC8A00FEE8F1 /* IDValidatorRegularExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDValidatorRegularExpression.m; sourceTree = "<group>"; };
+		F74A8F6624C1DC8A00FEE8F1 /* IDValidators.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDValidators.m; sourceTree = "<group>"; };
+		F74A8F6724C1DC8A00FEE8F1 /* IDValidatorTermsAndConditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDValidatorTermsAndConditions.h; sourceTree = "<group>"; };
+		F74A8F6824C1DC8A00FEE8F1 /* IDValidatorLuhn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDValidatorLuhn.m; sourceTree = "<group>"; };
+		F74A8F6924C1DC8A00FEE8F1 /* IDValueMappingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDValueMappingItem.m; sourceTree = "<group>"; };
+		F74A8F6A24C1DC8A00FEE8F1 /* IDValidators.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDValidators.h; sourceTree = "<group>"; };
+		F74A8F6B24C1DC8A00FEE8F1 /* IDValueMappingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDValueMappingItem.h; sourceTree = "<group>"; };
+		F74A8F6C24C1DC8A00FEE8F1 /* IDValidatorRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDValidatorRange.m; sourceTree = "<group>"; };
+		F74A8F6D24C1DC8A00FEE8F1 /* IDValidatorTermsAndConditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDValidatorTermsAndConditions.m; sourceTree = "<group>"; };
+		F74A8F6E24C1DC8A00FEE8F1 /* IDValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDValidator.h; sourceTree = "<group>"; };
+		F74A8F7124C1DC8B00FEE8F1 /* IDValidatorExpirationDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDValidatorExpirationDate.m; sourceTree = "<group>"; };
+		F74A8F7224C1DC8B00FEE8F1 /* IDValidatorLength.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDValidatorLength.h; sourceTree = "<group>"; };
+		F74A8F7324C1DC8B00FEE8F1 /* IDValidatorExpirationDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDValidatorExpirationDate.h; sourceTree = "<group>"; };
+		F74A8F7424C1DC8B00FEE8F1 /* IDValidatorLength.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDValidatorLength.m; sourceTree = "<group>"; };
+		F74A8F7524C1DC8B00FEE8F1 /* IDValidatorFixedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDValidatorFixedList.h; sourceTree = "<group>"; };
+		F74A8F7624C1DC8B00FEE8F1 /* IDValidatorEmailAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDValidatorEmailAddress.m; sourceTree = "<group>"; };
+		F74A8F8F24C1E15800FEE8F1 /* IDPaymentProduct302SpecificData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPaymentProduct302SpecificData.h; sourceTree = "<group>"; };
+		F74A8F9124C1E15800FEE8F1 /* IDPaymentProduct302SpecificData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDPaymentProduct302SpecificData.m; sourceTree = "<group>"; };
+		F74A8F9424C1E15900FEE8F1 /* IDDisplayElementType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDDisplayElementType.h; sourceTree = "<group>"; };
+		F74A8F9724C1E15900FEE8F1 /* IDDisplayElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDDisplayElement.h; sourceTree = "<group>"; };
+		F74A8F9924C1E15900FEE8F1 /* IDDisplayElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDDisplayElement.m; sourceTree = "<group>"; };
+		F74A8F9C24C1E15900FEE8F1 /* IDDisplayElementsConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDDisplayElementsConverter.h; sourceTree = "<group>"; };
+		F74A8F9D24C1E15A00FEE8F1 /* IDDisplayElementsConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDDisplayElementsConverter.m; sourceTree = "<group>"; };
+		F74A914224C1E19300FEE8F1 /* IDBasicPaymentProductGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDBasicPaymentProductGroup.m; sourceTree = "<group>"; };
+		F74A914324C1E19300FEE8F1 /* IDLabelTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDLabelTemplate.m; sourceTree = "<group>"; };
+		F74A914424C1E19300FEE8F1 /* IDBasicPaymentProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDBasicPaymentProduct.m; sourceTree = "<group>"; };
+		F74A914524C1E19300FEE8F1 /* IDBasicPaymentProducts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDBasicPaymentProducts.m; sourceTree = "<group>"; };
+		F74A914624C1E19300FEE8F1 /* IDPaymentProductField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPaymentProductField.h; sourceTree = "<group>"; };
+		F74A914724C1E19400FEE8F1 /* IDPaymentProductField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDPaymentProductField.m; sourceTree = "<group>"; };
+		F74A914824C1E19400FEE8F1 /* IDAccountOnFileAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDAccountOnFileAttributes.h; sourceTree = "<group>"; };
+		F74A914924C1E19400FEE8F1 /* IDAccountOnFileAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDAccountOnFileAttribute.m; sourceTree = "<group>"; };
+		F74A914A24C1E19400FEE8F1 /* IDPaymentProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPaymentProduct.h; sourceTree = "<group>"; };
+		F74A914B24C1E19400FEE8F1 /* IDToolTip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDToolTip.h; sourceTree = "<group>"; };
+		F74A914C24C1E19400FEE8F1 /* IDPaymentItemDisplayHints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDPaymentItemDisplayHints.m; sourceTree = "<group>"; };
+		F74A914D24C1E19400FEE8F1 /* IDToolTip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDToolTip.m; sourceTree = "<group>"; };
+		F74A914E24C1E19400FEE8F1 /* IDBasicPaymentProductGroups.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDBasicPaymentProductGroups.h; sourceTree = "<group>"; };
+		F74A914F24C1E19400FEE8F1 /* IDAccountOnFileAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDAccountOnFileAttributes.m; sourceTree = "<group>"; };
+		F74A915024C1E19500FEE8F1 /* IDFormElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDFormElement.h; sourceTree = "<group>"; };
+		F74A915124C1E19500FEE8F1 /* IDAccountOnFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDAccountOnFile.m; sourceTree = "<group>"; };
+		F74A915224C1E19500FEE8F1 /* IDBasicPaymentProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDBasicPaymentProduct.h; sourceTree = "<group>"; };
+		F74A915324C1E19500FEE8F1 /* IDDataRestrictions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDDataRestrictions.m; sourceTree = "<group>"; };
+		F74A915424C1E19500FEE8F1 /* IDPaymentProductFieldDisplayHints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDPaymentProductFieldDisplayHints.m; sourceTree = "<group>"; };
+		F74A915524C1E19500FEE8F1 /* IDDataRestrictions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDDataRestrictions.h; sourceTree = "<group>"; };
+		F74A915624C1E19500FEE8F1 /* IDAccountOnFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDAccountOnFile.h; sourceTree = "<group>"; };
+		F74A915724C1E19500FEE8F1 /* IDPaymentProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDPaymentProduct.m; sourceTree = "<group>"; };
+		F74A915824C1E19500FEE8F1 /* IDPaymentProductNetworks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDPaymentProductNetworks.m; sourceTree = "<group>"; };
+		F74A915924C1E19500FEE8F1 /* IDAccountOnFileDisplayHints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDAccountOnFileDisplayHints.h; sourceTree = "<group>"; };
+		F74A915A24C1E19600FEE8F1 /* IDPaymentProductFields.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDPaymentProductFields.m; sourceTree = "<group>"; };
+		F74A915B24C1E19600FEE8F1 /* IDAccountOnFileAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDAccountOnFileAttribute.h; sourceTree = "<group>"; };
+		F74A915C24C1E19600FEE8F1 /* IDPaymentProductGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPaymentProductGroup.h; sourceTree = "<group>"; };
+		F74A915D24C1E19600FEE8F1 /* IDBasicPaymentProductGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDBasicPaymentProductGroup.h; sourceTree = "<group>"; };
+		F74A915E24C1E19600FEE8F1 /* IDBasicPaymentProductGroups.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDBasicPaymentProductGroups.m; sourceTree = "<group>"; };
+		F74A915F24C1E19600FEE8F1 /* IDPaymentProductNetworks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPaymentProductNetworks.h; sourceTree = "<group>"; };
+		F74A916024C1E19600FEE8F1 /* IDPaymentItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDPaymentItems.m; sourceTree = "<group>"; };
+		F74A916124C1E19600FEE8F1 /* IDLabelTemplateItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDLabelTemplateItem.h; sourceTree = "<group>"; };
+		F74A916224C1E19700FEE8F1 /* IDPaymentItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPaymentItems.h; sourceTree = "<group>"; };
+		F74A916324C1E19700FEE8F1 /* IDFormElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDFormElement.m; sourceTree = "<group>"; };
+		F74A916424C1E19700FEE8F1 /* IDPaymentProductFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPaymentProductFields.h; sourceTree = "<group>"; };
+		F74A916524C1E19700FEE8F1 /* IDPaymentProductGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDPaymentProductGroup.m; sourceTree = "<group>"; };
+		F74A916624C1E19700FEE8F1 /* IDPaymentItemDisplayHints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPaymentItemDisplayHints.h; sourceTree = "<group>"; };
+		F74A916724C1E19700FEE8F1 /* IDAccountsOnFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDAccountsOnFile.m; sourceTree = "<group>"; };
+		F74A916824C1E19700FEE8F1 /* IDLabelTemplateItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDLabelTemplateItem.m; sourceTree = "<group>"; };
+		F74A916924C1E19700FEE8F1 /* IDLabelTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDLabelTemplate.h; sourceTree = "<group>"; };
+		F74A916A24C1E19700FEE8F1 /* IDAccountsOnFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDAccountsOnFile.h; sourceTree = "<group>"; };
+		F74A916B24C1E19800FEE8F1 /* IDAccountOnFileDisplayHints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDAccountOnFileDisplayHints.m; sourceTree = "<group>"; };
+		F74A916C24C1E19800FEE8F1 /* IDBasicPaymentProducts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDBasicPaymentProducts.h; sourceTree = "<group>"; };
+		F74A916D24C1E19800FEE8F1 /* IDPaymentProductFieldDisplayHints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPaymentProductFieldDisplayHints.h; sourceTree = "<group>"; };
+		F74A919B24C1EF5900FEE8F1 /* IDValidatorIBAN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDValidatorIBAN.h; sourceTree = "<group>"; };
+		F74A919C24C1EF5900FEE8F1 /* IDValidatorIBAN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDValidatorIBAN.m; sourceTree = "<group>"; };
+		F74A91A824C2F54F00FEE8F1 /* IDUtilTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDUtilTestCase.m; sourceTree = "<group>"; };
+		F74A91AA24C2F5A400FEE8F1 /* IDC2SCommunicatorConfigurationTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDC2SCommunicatorConfigurationTestCase.m; sourceTree = "<group>"; };
+		F74A91AC24C2F5E700FEE8F1 /* IDC2SCommunicatorTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDC2SCommunicatorTestCase.m; sourceTree = "<group>"; };
+		F74A91B124C3014600FEE8F1 /* IDStubUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDStubUtil.h; sourceTree = "<group>"; };
+		F74A91B224C3014600FEE8F1 /* IDStubUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDStubUtil.m; sourceTree = "<group>"; };
+		F74DA18024CF05B8002B6DE6 /* IngenicoDirectSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IngenicoDirectSDK.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F74A8CB324C19D7400FEE8F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F74A8CBC24C19D7400FEE8F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F74A8CC024C19D7400FEE8F1 /* IngenicoDirectSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F74A8CAC24C19D7400FEE8F1 = {
+			isa = PBXGroup;
+			children = (
+				F74A8CB824C19D7400FEE8F1 /* IngenicoDirectSDK */,
+				F74A8CC324C19D7400FEE8F1 /* IngenicoDirectSDKTests */,
+				F74A8CB724C19D7400FEE8F1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F74A8CB724C19D7400FEE8F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F74A8CB624C19D7400FEE8F1 /* IngenicoDirectSDK.framework */,
+				F74A8CBF24C19D7400FEE8F1 /* IngenicoDirectSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F74A8CB824C19D7400FEE8F1 /* IngenicoDirectSDK */ = {
+			isa = PBXGroup;
+			children = (
+				F74DA16624CEE27C002B6DE6 /* Base64 */,
+				F74DA16724CEE28C002B6DE6 /* Constants */,
+				F74DA16824CEE29B002B6DE6 /* Converters */,
+				F74DA16924CEE2AC002B6DE6 /* Cryptography */,
+				F74DA16A24CEE2C7002B6DE6 /* Enumerations */,
+				F74DA16B24CEE2D9002B6DE6 /* Formatters */,
+				F74DA17024CEE33F002B6DE6 /* JSON */,
+				F74DA17124CEE352002B6DE6 /* Macros */,
+				F74DA17224CEE364002B6DE6 /* Models */,
+				F74DA17324CEE373002B6DE6 /* Protocols */,
+				F74DA17424CEE389002B6DE6 /* Wrappers */,
+				F74A8CB924C19D7400FEE8F1 /* IngenicoDirectSDK.h */,
+				F74A8CDF24C1A3C700FEE8F1 /* IDAssetManager.h */,
+				F74A8CE024C1A3C700FEE8F1 /* IDAssetManager.m */,
+				F74A8CE724C1A51C00FEE8F1 /* IDC2SCommunicator.h */,
+				F74A8CE824C1A51C00FEE8F1 /* IDC2SCommunicator.m */,
+				F74A8CE324C1A45000FEE8F1 /* IDC2SCommunicatorConfiguration.h */,
+				F74A8CE424C1A45000FEE8F1 /* IDC2SCommunicatorConfiguration.m */,
+				F74A8CEB24C1A89B00FEE8F1 /* IDSession.h */,
+				F74A8CEC24C1A89B00FEE8F1 /* IDSession.m */,
+				F74A8CDB24C1A30900FEE8F1 /* IDUtil.h */,
+				F74A8CDC24C1A30900FEE8F1 /* IDUtil.m */,
+				F74A8CBA24C19D7400FEE8F1 /* Info.plist */,
+				F74DA18024CF05B8002B6DE6 /* IngenicoDirectSDK.bundle */,
+			);
+			path = IngenicoDirectSDK;
+			sourceTree = "<group>";
+		};
+		F74A8CC324C19D7400FEE8F1 /* IngenicoDirectSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				F74A91A324C2F4F700FEE8F1 /* Base64 */,
+				F74A91A124C2F4EC00FEE8F1 /* Converters */,
+				F74A91A524C2F50800FEE8F1 /* Cryptography */,
+				F74A91A224C2F4F000FEE8F1 /* Formatters */,
+				F74A91A424C2F4FE00FEE8F1 /* JSON */,
+				F74A91A024C2F4E500FEE8F1 /* Models */,
+				F74A91A624C2F51000FEE8F1 /* Stubs */,
+				F74A919F24C2F4D400FEE8F1 /* Supporting Files */,
+				F74A91A724C2F51500FEE8F1 /* Wrappers */,
+				F74A91AA24C2F5A400FEE8F1 /* IDC2SCommunicatorConfigurationTestCase.m */,
+				F74A91AC24C2F5E700FEE8F1 /* IDC2SCommunicatorTestCase.m */,
+				F74A91A824C2F54F00FEE8F1 /* IDUtilTestCase.m */,
+				F74A8CC624C19D7400FEE8F1 /* Info.plist */,
+			);
+			path = IngenicoDirectSDKTests;
+			sourceTree = "<group>";
+		};
+		F74A919F24C2F4D400FEE8F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F739BB5F24C58DDE00FFE16B /* certificate.pfx */,
+				F739BB6424C58DDE00FFE16B /* paymentProduct.json */,
+				F739BB6324C58DDE00FFE16B /* paymentProductGroup.json */,
+				F739BB6024C58DDE00FFE16B /* paymentProductGroups.json */,
+				F739BB6124C58DDE00FFE16B /* paymentProductMissingFields.json */,
+				F739BB6224C58DDE00FFE16B /* paymentProducts.json */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F74A91A024C2F4E500FEE8F1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F739BB7524C58E6500FFE16B /* IDAccountOnFileAttributesTestCase.m */,
+				F739BB6D24C58E6500FFE16B /* IDAccountOnFileTestCase.m */,
+				F739BB7A24C58E6500FFE16B /* IDAccountsOnFileTestCase.m */,
+				F739BB7924C58E6500FFE16B /* IDBasicPaymentProductTestCase.m */,
+				F739BB7C24C58E6500FFE16B /* IDLabelTemplateTestCase.m */,
+				F739BB7424C58E6500FFE16B /* IDPaymentProductFieldsTestCase.m */,
+				F739BB7224C58E6500FFE16B /* IDPaymentProductFieldTestCase.m */,
+				F739BB6F24C58E6500FFE16B /* IDPaymentProductsTestCase.m */,
+				F739BB7F24C58E6600FFE16B /* IDPaymentProductTestCase.m */,
+				F739BB7624C58E6500FFE16B /* IDPaymentRequestTestCase.m */,
+				F739BB7124C58E6500FFE16B /* IDValidatorEmailAddressTestCase.m */,
+				F739BB7324C58E6500FFE16B /* IDValidatorExpirationDateTestCase.m */,
+				F739BB7824C58E6500FFE16B /* IDValidatorFixedListTestCase.m */,
+				F739BB7D24C58E6600FFE16B /* IDValidatorLengthTestCase.m */,
+				F739BB7E24C58E6600FFE16B /* IDValidatorLuhnTestCase.m */,
+				F739BB7024C58E6500FFE16B /* IDValidatorRangeTestCase.m */,
+				F739BB6E24C58E6500FFE16B /* IDValidatorRegularExpressionTestCase.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F74A91A124C2F4EC00FEE8F1 /* Converters */ = {
+			isa = PBXGroup;
+			children = (
+				F739BB4B24C57CE200FFE16B /* IDBasicPaymentGroupConverterTestCase.m */,
+				F739BB4D24C5814600FFE16B /* IDBasicPaymentProductConverterTestCase.m */,
+				F739BB4F24C5817B00FFE16B /* IDPaymentGroupConverterTestCase.m */,
+				F739BB5124C5823F00FFE16B /* IDPaymentGroupsConverterTestCase.m */,
+				F739BB5324C5827500FFE16B /* IDPaymentProductConverterTestCase.m */,
+				F739BB5524C582AA00FFE16B /* IDPaymentProductsConverterTestCase.m */,
+			);
+			path = Converters;
+			sourceTree = "<group>";
+		};
+		F74A91A224C2F4F000FEE8F1 /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				F739BB5B24C58D4E00FFE16B /* IDStringFormatterTestCase.m */,
+			);
+			path = Formatters;
+			sourceTree = "<group>";
+		};
+		F74A91A324C2F4F700FEE8F1 /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				F739BB4924C57C6000FFE16B /* IDBase64TestCase.m */,
+			);
+			path = Base64;
+			sourceTree = "<group>";
+		};
+		F74A91A424C2F4FE00FEE8F1 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				F739BB5D24C58D8100FFE16B /* IDJSONTestCase.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		F74A91A524C2F50800FEE8F1 /* Cryptography */ = {
+			isa = PBXGroup;
+			children = (
+				F739BB5724C582F100FFE16B /* IDJOSEEncryptorTestCase.m */,
+				F739BB5924C5834500FFE16B /* IDEncryptorTestCase.m */,
+			);
+			path = Cryptography;
+			sourceTree = "<group>";
+		};
+		F74A91A624C2F51000FEE8F1 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				F74A91B124C3014600FEE8F1 /* IDStubUtil.h */,
+				F74A91B224C3014600FEE8F1 /* IDStubUtil.m */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		F74A91A724C2F51500FEE8F1 /* Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				F739BB6B24C58DF900FFE16B /* IDNetworkingWrapperTestCase.m */,
+			);
+			path = Wrappers;
+			sourceTree = "<group>";
+		};
+		F74DA16624CEE27C002B6DE6 /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				F74A8CEF24C1B6F100FEE8F1 /* IDBase64.h */,
+				F74A8CF024C1B6F100FEE8F1 /* IDBase64.m */,
+			);
+			name = Base64;
+			sourceTree = "<group>";
+		};
+		F74DA16724CEE28C002B6DE6 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F74A8CF324C1B77800FEE8F1 /* IDSDKConstants.h */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		F74DA16824CEE29B002B6DE6 /* Converters */ = {
+			isa = PBXGroup;
+			children = (
+				F74A8CFA24C1B7C900FEE8F1 /* IDBasicPaymentItemConverter.h */,
+				F74A8CFD24C1B7C900FEE8F1 /* IDBasicPaymentItemConverter.m */,
+				F74A8D0224C1B7CA00FEE8F1 /* IDBasicPaymentProductConverter.h */,
+				F74A8D0524C1B7CA00FEE8F1 /* IDBasicPaymentProductConverter.m */,
+				F74A8D0C24C1B7CA00FEE8F1 /* IDBasicPaymentProductsConverter.h */,
+				F74A8D0324C1B7CA00FEE8F1 /* IDBasicPaymentProductsConverter.m */,
+				F74A8CFB24C1B7C900FEE8F1 /* IDIINDetailsResponseConverter.h */,
+				F74A8D0724C1B7CA00FEE8F1 /* IDIINDetailsResponseConverter.m */,
+				F74A8D0E24C1B7CA00FEE8F1 /* IDPaymentContextConverter.h */,
+				F74A8CF724C1B7C900FEE8F1 /* IDPaymentContextConverter.m */,
+				F74A8D0124C1B7CA00FEE8F1 /* IDPaymentItemConverter.h */,
+				F74A8D0A24C1B7CA00FEE8F1 /* IDPaymentItemConverter.m */,
+				F74A8CFF24C1B7CA00FEE8F1 /* IDPaymentProductConverter.h */,
+				F74A8CFC24C1B7C900FEE8F1 /* IDPaymentProductConverter.m */,
+			);
+			name = Converters;
+			sourceTree = "<group>";
+		};
+		F74DA16924CEE2AC002B6DE6 /* Cryptography */ = {
+			isa = PBXGroup;
+			children = (
+				F74A8D2724C1BB1300FEE8F1 /* IDEncryptor.h */,
+				F74A8D2824C1BB1300FEE8F1 /* IDEncryptor.m */,
+				F74A8D2B24C1BB7F00FEE8F1 /* IDJOSEEncryptor.h */,
+				F74A8D2C24C1BB7F00FEE8F1 /* IDJOSEEncryptor.m */,
+			);
+			name = Cryptography;
+			sourceTree = "<group>";
+		};
+		F74DA16A24CEE2C7002B6DE6 /* Enumerations */ = {
+			isa = PBXGroup;
+			children = (
+				F74A8D3024C1BBDD00FEE8F1 /* IDAccountOnFileAttributeStatus.h */,
+				F74A8D3224C1BBDD00FEE8F1 /* IDEnvironment.h */,
+				F74A8D3124C1BBDD00FEE8F1 /* IDFormElementType.h */,
+				F74A8D3424C1BBDD00FEE8F1 /* IDIINStatus.h */,
+				F74A8D2F24C1BBDD00FEE8F1 /* IDPreferredInputType.h */,
+				F74A8D3324C1BBDD00FEE8F1 /* IDRegion.h */,
+				F74A8D3524C1BBDE00FEE8F1 /* IDType.h */,
+			);
+			name = Enumerations;
+			sourceTree = "<group>";
+		};
+		F74DA16B24CEE2D9002B6DE6 /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				F74A8D3D24C1BCF100FEE8F1 /* IDStringFormatter.h */,
+				F74A8D3E24C1BCF100FEE8F1 /* IDStringFormatter.m */,
+			);
+			name = Formatters;
+			sourceTree = "<group>";
+		};
+		F74DA17024CEE33F002B6DE6 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				F74A8D4124C1BD4900FEE8F1 /* IDJSON.h */,
+				F74A8D4224C1BD4900FEE8F1 /* IDJSON.m */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		F74DA17124CEE352002B6DE6 /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				F74A8D4524C1BDBB00FEE8F1 /* IDMacros.h */,
+			);
+			name = Macros;
+			sourceTree = "<group>";
+		};
+		F74DA17224CEE364002B6DE6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F74DA17624CEE3D4002B6DE6 /* AccountOnFile */,
+				F74DA17724CEE3E3002B6DE6 /* C2SPaymentProductContext */,
+				F74DA17A24CEE40E002B6DE6 /* IINDetails */,
+				F74DA17B24CEE415002B6DE6 /* PaymentProducts */,
+				F74DA17C24CEE41D002B6DE6 /* PaymentRequests */,
+				F74DA17D24CEE431002B6DE6 /* PublicKeys */,
+				F74DA17F24CEE441002B6DE6 /* ValidationErrors */,
+				F74DA17E24CEE43B002B6DE6 /* Validators */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F74DA17324CEE373002B6DE6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F74A8EDA24C1BE0800FEE8F1 /* IDBasicPaymentItem.h */,
+				F74A8EDB24C1BE2F00FEE8F1 /* IDPaymentItem.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		F74DA17424CEE389002B6DE6 /* Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				F74DA17524CEE39F002B6DE6 /* NetworkingLogger */,
+				F74A8EE524C1BF0A00FEE8F1 /* IDAFNetworkingWrapper.h */,
+				F74A8EE624C1BF0A00FEE8F1 /* IDAFNetworkingWrapper.m */,
+				F74A8EE124C1BEF400FEE8F1 /* IDNetworkingWrapper.h */,
+				F74A8EE224C1BEF400FEE8F1 /* IDNetworkingWrapper.m */,
+			);
+			name = Wrappers;
+			sourceTree = "<group>";
+		};
+		F74DA17524CEE39F002B6DE6 /* NetworkingLogger */ = {
+			isa = PBXGroup;
+			children = (
+				F74A8EE924C1BF2700FEE8F1 /* IDNetworkingActivityLogger.h */,
+				F74A8EEA24C1BF2700FEE8F1 /* IDNetworkingActivityLogger.m */,
+				F74A8EED24C1BF4000FEE8F1 /* IDNetworkingActivityConsoleLogger.h */,
+				F74A8EEE24C1BF4000FEE8F1 /* IDNetworkingActivityConsoleLogger.m */,
+				F74A8EF124C1C04600FEE8F1 /* IDNetworkingActivityLoggerProtocol.h */,
+			);
+			name = NetworkingLogger;
+			sourceTree = "<group>";
+		};
+		F74DA17624CEE3D4002B6DE6 /* AccountOnFile */ = {
+			isa = PBXGroup;
+			children = (
+				F74A915624C1E19500FEE8F1 /* IDAccountOnFile.h */,
+				F74A915124C1E19500FEE8F1 /* IDAccountOnFile.m */,
+				F74A915B24C1E19600FEE8F1 /* IDAccountOnFileAttribute.h */,
+				F74A914924C1E19400FEE8F1 /* IDAccountOnFileAttribute.m */,
+				F74A914824C1E19400FEE8F1 /* IDAccountOnFileAttributes.h */,
+				F74A914F24C1E19400FEE8F1 /* IDAccountOnFileAttributes.m */,
+				F74A915924C1E19500FEE8F1 /* IDAccountOnFileDisplayHints.h */,
+				F74A916B24C1E19800FEE8F1 /* IDAccountOnFileDisplayHints.m */,
+				F74A916A24C1E19700FEE8F1 /* IDAccountsOnFile.h */,
+				F74A916724C1E19700FEE8F1 /* IDAccountsOnFile.m */,
+			);
+			name = AccountOnFile;
+			sourceTree = "<group>";
+		};
+		F74DA17724CEE3E3002B6DE6 /* C2SPaymentProductContext */ = {
+			isa = PBXGroup;
+			children = (
+				F74A8EFA24C1C75C00FEE8F1 /* IDPaymentContext.h */,
+				F74A8EFB24C1C75C00FEE8F1 /* IDPaymentContext.m */,
+				F74A8EFE24C1C77100FEE8F1 /* IDPaymentAmountOfMoney.h */,
+				F74A8EFF24C1C77200FEE8F1 /* IDPaymentAmountOfMoney.m */,
+			);
+			name = C2SPaymentProductContext;
+			sourceTree = "<group>";
+		};
+		F74DA17A24CEE40E002B6DE6 /* IINDetails */ = {
+			isa = PBXGroup;
+			children = (
+				F74A8F1224C1D79400FEE8F1 /* IDIINDetailsResponse.h */,
+				F74A8F1324C1D79400FEE8F1 /* IDIINDetailsResponse.m */,
+				F74A8F1624C1D7F600FEE8F1 /* IDIINDetail.h */,
+				F74A8F1724C1D7F600FEE8F1 /* IDIINDetail.m */,
+			);
+			name = IINDetails;
+			sourceTree = "<group>";
+		};
+		F74DA17B24CEE415002B6DE6 /* PaymentProducts */ = {
+			isa = PBXGroup;
+			children = (
+				F74A915224C1E19500FEE8F1 /* IDBasicPaymentProduct.h */,
+				F74A914424C1E19300FEE8F1 /* IDBasicPaymentProduct.m */,
+				F74A915D24C1E19600FEE8F1 /* IDBasicPaymentProductGroup.h */,
+				F74A914224C1E19300FEE8F1 /* IDBasicPaymentProductGroup.m */,
+				F74A914E24C1E19400FEE8F1 /* IDBasicPaymentProductGroups.h */,
+				F74A915E24C1E19600FEE8F1 /* IDBasicPaymentProductGroups.m */,
+				F74A916C24C1E19800FEE8F1 /* IDBasicPaymentProducts.h */,
+				F74A914524C1E19300FEE8F1 /* IDBasicPaymentProducts.m */,
+				F74A915524C1E19500FEE8F1 /* IDDataRestrictions.h */,
+				F74A915324C1E19500FEE8F1 /* IDDataRestrictions.m */,
+				F74A8F9724C1E15900FEE8F1 /* IDDisplayElement.h */,
+				F74A8F9924C1E15900FEE8F1 /* IDDisplayElement.m */,
+				F74A8F9C24C1E15900FEE8F1 /* IDDisplayElementsConverter.h */,
+				F74A8F9D24C1E15A00FEE8F1 /* IDDisplayElementsConverter.m */,
+				F74A8F9424C1E15900FEE8F1 /* IDDisplayElementType.h */,
+				F74A915024C1E19500FEE8F1 /* IDFormElement.h */,
+				F74A916324C1E19700FEE8F1 /* IDFormElement.m */,
+				F74A916924C1E19700FEE8F1 /* IDLabelTemplate.h */,
+				F74A914324C1E19300FEE8F1 /* IDLabelTemplate.m */,
+				F74A916124C1E19600FEE8F1 /* IDLabelTemplateItem.h */,
+				F74A916824C1E19700FEE8F1 /* IDLabelTemplateItem.m */,
+				F74A916624C1E19700FEE8F1 /* IDPaymentItemDisplayHints.h */,
+				F74A914C24C1E19400FEE8F1 /* IDPaymentItemDisplayHints.m */,
+				F74A916224C1E19700FEE8F1 /* IDPaymentItems.h */,
+				F74A916024C1E19600FEE8F1 /* IDPaymentItems.m */,
+				F74A914A24C1E19400FEE8F1 /* IDPaymentProduct.h */,
+				F74A915724C1E19500FEE8F1 /* IDPaymentProduct.m */,
+				F74A8F8F24C1E15800FEE8F1 /* IDPaymentProduct302SpecificData.h */,
+				F74A8F9124C1E15800FEE8F1 /* IDPaymentProduct302SpecificData.m */,
+				F74A914624C1E19300FEE8F1 /* IDPaymentProductField.h */,
+				F74A914724C1E19400FEE8F1 /* IDPaymentProductField.m */,
+				F74A916D24C1E19800FEE8F1 /* IDPaymentProductFieldDisplayHints.h */,
+				F74A915424C1E19500FEE8F1 /* IDPaymentProductFieldDisplayHints.m */,
+				F74A916424C1E19700FEE8F1 /* IDPaymentProductFields.h */,
+				F74A915A24C1E19600FEE8F1 /* IDPaymentProductFields.m */,
+				F74A915C24C1E19600FEE8F1 /* IDPaymentProductGroup.h */,
+				F74A916524C1E19700FEE8F1 /* IDPaymentProductGroup.m */,
+				F74A915F24C1E19600FEE8F1 /* IDPaymentProductNetworks.h */,
+				F74A915824C1E19500FEE8F1 /* IDPaymentProductNetworks.m */,
+				F74A914B24C1E19400FEE8F1 /* IDToolTip.h */,
+				F74A914D24C1E19400FEE8F1 /* IDToolTip.m */,
+			);
+			name = PaymentProducts;
+			sourceTree = "<group>";
+		};
+		F74DA17C24CEE41D002B6DE6 /* PaymentRequests */ = {
+			isa = PBXGroup;
+			children = (
+				F74A8F1B24C1D88500FEE8F1 /* IDPaymentRequest.h */,
+				F74A8F1C24C1D88500FEE8F1 /* IDPaymentRequest.m */,
+				F74A8F1F24C1D90D00FEE8F1 /* IDPreparedPaymentRequest.h */,
+				F74A8F2024C1D90D00FEE8F1 /* IDPreparedPaymentRequest.m */,
+			);
+			name = PaymentRequests;
+			sourceTree = "<group>";
+		};
+		F74DA17D24CEE431002B6DE6 /* PublicKeys */ = {
+			isa = PBXGroup;
+			children = (
+				F74A8F2324C1D94400FEE8F1 /* IDPublicKeyResponse.h */,
+				F74A8F2424C1D94400FEE8F1 /* IDPublicKeyResponse.m */,
+			);
+			name = PublicKeys;
+			sourceTree = "<group>";
+		};
+		F74DA17E24CEE43B002B6DE6 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				F74A8F6E24C1DC8A00FEE8F1 /* IDValidator.h */,
+				F74A8F6124C1DC8900FEE8F1 /* IDValidator.m */,
+				F74A8F6224C1DC8900FEE8F1 /* IDValidatorEmailAddress.h */,
+				F74A8F7624C1DC8B00FEE8F1 /* IDValidatorEmailAddress.m */,
+				F74A8F7324C1DC8B00FEE8F1 /* IDValidatorExpirationDate.h */,
+				F74A8F7124C1DC8B00FEE8F1 /* IDValidatorExpirationDate.m */,
+				F74A8F7524C1DC8B00FEE8F1 /* IDValidatorFixedList.h */,
+				F74A8F5F24C1DC8900FEE8F1 /* IDValidatorFixedList.m */,
+				F74A919B24C1EF5900FEE8F1 /* IDValidatorIBAN.h */,
+				F74A919C24C1EF5900FEE8F1 /* IDValidatorIBAN.m */,
+				F74A8F7224C1DC8B00FEE8F1 /* IDValidatorLength.h */,
+				F74A8F7424C1DC8B00FEE8F1 /* IDValidatorLength.m */,
+				F74A8F6024C1DC8900FEE8F1 /* IDValidatorLuhn.h */,
+				F74A8F6824C1DC8A00FEE8F1 /* IDValidatorLuhn.m */,
+				F74A8F6324C1DC8900FEE8F1 /* IDValidatorRange.h */,
+				F74A8F6C24C1DC8A00FEE8F1 /* IDValidatorRange.m */,
+				F74A8F6424C1DC8A00FEE8F1 /* IDValidatorRegularExpression.h */,
+				F74A8F6524C1DC8A00FEE8F1 /* IDValidatorRegularExpression.m */,
+				F74A8F6A24C1DC8A00FEE8F1 /* IDValidators.h */,
+				F74A8F6624C1DC8A00FEE8F1 /* IDValidators.m */,
+				F74A8F6724C1DC8A00FEE8F1 /* IDValidatorTermsAndConditions.h */,
+				F74A8F6D24C1DC8A00FEE8F1 /* IDValidatorTermsAndConditions.m */,
+				F74A8F6B24C1DC8A00FEE8F1 /* IDValueMappingItem.h */,
+				F74A8F6924C1DC8A00FEE8F1 /* IDValueMappingItem.m */,
+			);
+			name = Validators;
+			sourceTree = "<group>";
+		};
+		F74DA17F24CEE441002B6DE6 /* ValidationErrors */ = {
+			isa = PBXGroup;
+			children = (
+				F74A8F3024C1D99000FEE8F1 /* IDValidationError.h */,
+				F74A8F3224C1D99000FEE8F1 /* IDValidationError.m */,
+				F74A8F2D24C1D99000FEE8F1 /* IDValidationErrorAllowed.h */,
+				F74A8F2C24C1D99000FEE8F1 /* IDValidationErrorAllowed.m */,
+				F74A8F3A24C1D99100FEE8F1 /* IDValidationErrorEmailAddress.h */,
+				F74A8F2824C1D98F00FEE8F1 /* IDValidationErrorEmailAddress.m */,
+				F74A8F2E24C1D99000FEE8F1 /* IDValidationErrorExpirationDate.h */,
+				F74A8F2924C1D98F00FEE8F1 /* IDValidationErrorExpirationDate.m */,
+				F74A8F3524C1D99000FEE8F1 /* IDValidationErrorFixedList.h */,
+				F74A8F3B24C1D99100FEE8F1 /* IDValidationErrorFixedList.m */,
+				F74A8F4024C1D99100FEE8F1 /* IDValidationErrorIBAN.h */,
+				F74A8F3624C1D99000FEE8F1 /* IDValidationErrorIBAN.m */,
+				F74A8F3124C1D99000FEE8F1 /* IDValidationErrorInteger.h */,
+				F74A8F3F24C1D99100FEE8F1 /* IDValidationErrorInteger.m */,
+				F74A8F2F24C1D99000FEE8F1 /* IDValidationErrorIsRequired.h */,
+				F74A8F3824C1D99100FEE8F1 /* IDValidationErrorIsRequired.m */,
+				F74A8F4224C1D99100FEE8F1 /* IDValidationErrorLength.h */,
+				F74A8F2B24C1D99000FEE8F1 /* IDValidationErrorLength.m */,
+				F74A8F3E24C1D99100FEE8F1 /* IDValidationErrorLuhn.h */,
+				F74A8F2A24C1D99000FEE8F1 /* IDValidationErrorLuhn.m */,
+				F74A8F3324C1D99000FEE8F1 /* IDValidationErrorNumericString.h */,
+				F74A8F3724C1D99100FEE8F1 /* IDValidationErrorNumericString.m */,
+				F74A8F3924C1D99100FEE8F1 /* IDValidationErrorRange.h */,
+				F74A8F3C24C1D99100FEE8F1 /* IDValidationErrorRange.m */,
+				F74A8F2724C1D98F00FEE8F1 /* IDValidationErrorRegularExpression.h */,
+				F74A8F3424C1D99000FEE8F1 /* IDValidationErrorRegularExpression.m */,
+				F74A8F3D24C1D99100FEE8F1 /* IDValidationErrorTermsAndConditions.h */,
+				F74A8F4124C1D99100FEE8F1 /* IDValidationErrorTermsAndConditions.m */,
+			);
+			name = ValidationErrors;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F74A8CB124C19D7400FEE8F1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F74A8F1D24C1D88500FEE8F1 /* IDPaymentRequest.h in Headers */,
+				F74A8F4F24C1D99200FEE8F1 /* IDValidationErrorNumericString.h in Headers */,
+				F74A8F0024C1C77200FEE8F1 /* IDPaymentAmountOfMoney.h in Headers */,
+				F74A8D4324C1BD4900FEE8F1 /* IDJSON.h in Headers */,
+				F74A8D2624C1B7CA00FEE8F1 /* IDPaymentContextConverter.h in Headers */,
+				F74A8D3C24C1BBDE00FEE8F1 /* IDType.h in Headers */,
+				F74A8F5924C1D99200FEE8F1 /* IDValidationErrorTermsAndConditions.h in Headers */,
+				F74A918824C1E19800FEE8F1 /* IDPaymentProductGroup.h in Headers */,
+				F74A8D3A24C1BBDE00FEE8F1 /* IDRegion.h in Headers */,
+				F74A8F4324C1D99200FEE8F1 /* IDValidationErrorRegularExpression.h in Headers */,
+				F74A8D2424C1B7CA00FEE8F1 /* IDBasicPaymentProductsConverter.h in Headers */,
+				F74A8CED24C1A89B00FEE8F1 /* IDSession.h in Headers */,
+				F74A917C24C1E19800FEE8F1 /* IDFormElement.h in Headers */,
+				F74A919224C1E19800FEE8F1 /* IDPaymentItemDisplayHints.h in Headers */,
+				F74A8F7B24C1DC8B00FEE8F1 /* IDValidatorRange.h in Headers */,
+				F74A8F5524C1D99200FEE8F1 /* IDValidationErrorRange.h in Headers */,
+				F74A8F7A24C1DC8B00FEE8F1 /* IDValidatorEmailAddress.h in Headers */,
+				F74A8D1924C1B7CA00FEE8F1 /* IDPaymentItemConverter.h in Headers */,
+				F74A8F4B24C1D99200FEE8F1 /* IDValidationErrorIsRequired.h in Headers */,
+				F74A8F5C24C1D99200FEE8F1 /* IDValidationErrorIBAN.h in Headers */,
+				F74A8F8D24C1DC8B00FEE8F1 /* IDValidatorFixedList.h in Headers */,
+				F74A91B024C2FFEA00FEE8F1 /* IDPaymentItem.h in Headers */,
+				F74A8CE524C1A45000FEE8F1 /* IDC2SCommunicatorConfiguration.h in Headers */,
+				F74A8F2124C1D90D00FEE8F1 /* IDPreparedPaymentRequest.h in Headers */,
+				F74A91AF24C2FFCD00FEE8F1 /* IDBasicPaymentItem.h in Headers */,
+				F74A919824C1E19800FEE8F1 /* IDBasicPaymentProducts.h in Headers */,
+				F74A8F4D24C1D99200FEE8F1 /* IDValidationErrorInteger.h in Headers */,
+				F74A919024C1E19800FEE8F1 /* IDPaymentProductFields.h in Headers */,
+				F74A8D3F24C1BCF100FEE8F1 /* IDStringFormatter.h in Headers */,
+				F74A8D2D24C1BB7F00FEE8F1 /* IDJOSEEncryptor.h in Headers */,
+				F74A8CF524C1B77800FEE8F1 /* IDSDKConstants.h in Headers */,
+				F74A8F5E24C1D99200FEE8F1 /* IDValidationErrorLength.h in Headers */,
+				F74A8EFC24C1C75C00FEE8F1 /* IDPaymentContext.h in Headers */,
+				F74A8CE924C1A51C00FEE8F1 /* IDC2SCommunicator.h in Headers */,
+				F74A8F8A24C1DC8B00FEE8F1 /* IDValidatorLength.h in Headers */,
+				F74A919924C1E19800FEE8F1 /* IDPaymentProductFieldDisplayHints.h in Headers */,
+				F74A8F5124C1D99200FEE8F1 /* IDValidationErrorFixedList.h in Headers */,
+				F74A8CDD24C1A30900FEE8F1 /* IDUtil.h in Headers */,
+				F74A8D3824C1BBDE00FEE8F1 /* IDFormElementType.h in Headers */,
+				F74A919D24C1EF5900FEE8F1 /* IDValidatorIBAN.h in Headers */,
+				F74A8D1324C1B7CA00FEE8F1 /* IDIINDetailsResponseConverter.h in Headers */,
+				F74A918B24C1E19800FEE8F1 /* IDPaymentProductNetworks.h in Headers */,
+				F74A8D4624C1BDBB00FEE8F1 /* IDMacros.h in Headers */,
+				F74A8D2924C1BB1300FEE8F1 /* IDEncryptor.h in Headers */,
+				F74A8F5A24C1D99200FEE8F1 /* IDValidationErrorLuhn.h in Headers */,
+				F74A8CF124C1B6F100FEE8F1 /* IDBase64.h in Headers */,
+				F74A918124C1E19800FEE8F1 /* IDDataRestrictions.h in Headers */,
+				F74A8D1224C1B7CA00FEE8F1 /* IDBasicPaymentItemConverter.h in Headers */,
+				F74A918524C1E19800FEE8F1 /* IDAccountOnFileDisplayHints.h in Headers */,
+				F74A8FAC24C1E15A00FEE8F1 /* IDDisplayElementsConverter.h in Headers */,
+				F74A8FA724C1E15A00FEE8F1 /* IDDisplayElement.h in Headers */,
+				F74A918924C1E19800FEE8F1 /* IDBasicPaymentProductGroup.h in Headers */,
+				F74A8F7C24C1DC8B00FEE8F1 /* IDValidatorRegularExpression.h in Headers */,
+				F74A8D3724C1BBDE00FEE8F1 /* IDAccountOnFileAttributeStatus.h in Headers */,
+				F74A8F1824C1D7F600FEE8F1 /* IDIINDetail.h in Headers */,
+				F74A8F5624C1D99200FEE8F1 /* IDValidationErrorEmailAddress.h in Headers */,
+				F74A8D3924C1BBDE00FEE8F1 /* IDEnvironment.h in Headers */,
+				F74A8D3624C1BBDE00FEE8F1 /* IDPreferredInputType.h in Headers */,
+				F74A918724C1E19800FEE8F1 /* IDAccountOnFileAttribute.h in Headers */,
+				F74A917224C1E19800FEE8F1 /* IDPaymentProductField.h in Headers */,
+				F74A8F7824C1DC8B00FEE8F1 /* IDValidatorLuhn.h in Headers */,
+				F74A917724C1E19800FEE8F1 /* IDToolTip.h in Headers */,
+				F74A918D24C1E19800FEE8F1 /* IDLabelTemplateItem.h in Headers */,
+				F74A8F8624C1DC8B00FEE8F1 /* IDValidator.h in Headers */,
+				F74A917624C1E19800FEE8F1 /* IDPaymentProduct.h in Headers */,
+				F74A8CE124C1A3C700FEE8F1 /* IDAssetManager.h in Headers */,
+				F74A8D3B24C1BBDE00FEE8F1 /* IDIINStatus.h in Headers */,
+				F74A8F2524C1D94400FEE8F1 /* IDPublicKeyResponse.h in Headers */,
+				F74A917E24C1E19800FEE8F1 /* IDBasicPaymentProduct.h in Headers */,
+				F74A917424C1E19800FEE8F1 /* IDAccountOnFileAttributes.h in Headers */,
+				F74A919624C1E19800FEE8F1 /* IDAccountsOnFile.h in Headers */,
+				F74A8F7F24C1DC8B00FEE8F1 /* IDValidatorTermsAndConditions.h in Headers */,
+				F74A8F8B24C1DC8B00FEE8F1 /* IDValidatorExpirationDate.h in Headers */,
+				F74A8D1724C1B7CA00FEE8F1 /* IDPaymentProductConverter.h in Headers */,
+				F74A919524C1E19800FEE8F1 /* IDLabelTemplate.h in Headers */,
+				F74A917A24C1E19800FEE8F1 /* IDBasicPaymentProductGroups.h in Headers */,
+				F74A8F4924C1D99200FEE8F1 /* IDValidationErrorAllowed.h in Headers */,
+				F74A8F4A24C1D99200FEE8F1 /* IDValidationErrorExpirationDate.h in Headers */,
+				F74A8F1424C1D79400FEE8F1 /* IDIINDetailsResponse.h in Headers */,
+				F74A918224C1E19800FEE8F1 /* IDAccountOnFile.h in Headers */,
+				F74A8F4C24C1D99200FEE8F1 /* IDValidationError.h in Headers */,
+				F74A918E24C1E19800FEE8F1 /* IDPaymentItems.h in Headers */,
+				F74A8D1A24C1B7CA00FEE8F1 /* IDBasicPaymentProductConverter.h in Headers */,
+				F74A8F9F24C1E15A00FEE8F1 /* IDPaymentProduct302SpecificData.h in Headers */,
+				F74A8F8224C1DC8B00FEE8F1 /* IDValidators.h in Headers */,
+				F74A8F8324C1DC8B00FEE8F1 /* IDValueMappingItem.h in Headers */,
+				F74A8FA424C1E15A00FEE8F1 /* IDDisplayElementType.h in Headers */,
+				F74A8CC724C19D7400FEE8F1 /* IngenicoDirectSDK.h in Headers */,
+				F74A8EEF24C1BF4000FEE8F1 /* IDNetworkingActivityConsoleLogger.h in Headers */,
+				F74A8EEB24C1BF2700FEE8F1 /* IDNetworkingActivityLogger.h in Headers */,
+				F74A8EE724C1BF0A00FEE8F1 /* IDAFNetworkingWrapper.h in Headers */,
+				F74A8EE324C1BEF400FEE8F1 /* IDNetworkingWrapper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F74A8CB524C19D7400FEE8F1 /* IngenicoDirectSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F74A8CCA24C19D7400FEE8F1 /* Build configuration list for PBXNativeTarget "IngenicoDirectSDK" */;
+			buildPhases = (
+				F74A8CB124C19D7400FEE8F1 /* Headers */,
+				F74A8CB224C19D7400FEE8F1 /* Sources */,
+				F74A8CB324C19D7400FEE8F1 /* Frameworks */,
+				F74A8CB424C19D7400FEE8F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IngenicoDirectSDK;
+			productName = IngenicoDirectSDK;
+			productReference = F74A8CB624C19D7400FEE8F1 /* IngenicoDirectSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F74A8CBE24C19D7400FEE8F1 /* IngenicoDirectSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F74A8CCD24C19D7400FEE8F1 /* Build configuration list for PBXNativeTarget "IngenicoDirectSDKTests" */;
+			buildPhases = (
+				F74A8CBB24C19D7400FEE8F1 /* Sources */,
+				F74A8CBC24C19D7400FEE8F1 /* Frameworks */,
+				F74A8CBD24C19D7400FEE8F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F74A8CC224C19D7400FEE8F1 /* PBXTargetDependency */,
+			);
+			name = IngenicoDirectSDKTests;
+			productName = IngenicoDirectSDKTests;
+			productReference = F74A8CBF24C19D7400FEE8F1 /* IngenicoDirectSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F74A8CAD24C19D7400FEE8F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Ingenico ePayments";
+				TargetAttributes = {
+					F74A8CB524C19D7400FEE8F1 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					F74A8CBE24C19D7400FEE8F1 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = F74A8CB024C19D7400FEE8F1 /* Build configuration list for PBXProject "IngenicoDirectSDK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F74A8CAC24C19D7400FEE8F1;
+			productRefGroup = F74A8CB724C19D7400FEE8F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F74A8CB524C19D7400FEE8F1 /* IngenicoDirectSDK */,
+				F74A8CBE24C19D7400FEE8F1 /* IngenicoDirectSDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F74A8CB424C19D7400FEE8F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F74DA18124CF05B8002B6DE6 /* IngenicoDirectSDK.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F74A8CBD24C19D7400FEE8F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F739BB6624C58DDE00FFE16B /* paymentProductGroups.json in Resources */,
+				F739BB6924C58DDE00FFE16B /* paymentProductGroup.json in Resources */,
+				F739BB6A24C58DDE00FFE16B /* paymentProduct.json in Resources */,
+				F739BB6524C58DDE00FFE16B /* certificate.pfx in Resources */,
+				F739BB6824C58DDE00FFE16B /* paymentProducts.json in Resources */,
+				F739BB6724C58DDE00FFE16B /* paymentProductMissingFields.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F74A8CB224C19D7400FEE8F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F74A8F8424C1DC8B00FEE8F1 /* IDValidatorRange.m in Sources */,
+				F74A8F8C24C1DC8B00FEE8F1 /* IDValidatorLength.m in Sources */,
+				F74A8D4424C1BD4900FEE8F1 /* IDJSON.m in Sources */,
+				F74A8F7724C1DC8B00FEE8F1 /* IDValidatorFixedList.m in Sources */,
+				F74A919E24C1EF5900FEE8F1 /* IDValidatorIBAN.m in Sources */,
+				F74A8F5824C1D99200FEE8F1 /* IDValidationErrorRange.m in Sources */,
+				F74A8CEE24C1A89B00FEE8F1 /* IDSession.m in Sources */,
+				F74A8F5D24C1D99200FEE8F1 /* IDValidationErrorTermsAndConditions.m in Sources */,
+				F74A8F4424C1D99200FEE8F1 /* IDValidationErrorEmailAddress.m in Sources */,
+				F74A8F5024C1D99200FEE8F1 /* IDValidationErrorRegularExpression.m in Sources */,
+				F74A917924C1E19800FEE8F1 /* IDToolTip.m in Sources */,
+				F74A916E24C1E19800FEE8F1 /* IDBasicPaymentProductGroup.m in Sources */,
+				F74A917F24C1E19800FEE8F1 /* IDDataRestrictions.m in Sources */,
+				F74A8F8024C1DC8B00FEE8F1 /* IDValidatorLuhn.m in Sources */,
+				F74A8F8124C1DC8B00FEE8F1 /* IDValueMappingItem.m in Sources */,
+				F74A8F8924C1DC8B00FEE8F1 /* IDValidatorExpirationDate.m in Sources */,
+				F74A917B24C1E19800FEE8F1 /* IDAccountOnFileAttributes.m in Sources */,
+				F74A8F5724C1D99200FEE8F1 /* IDValidationErrorFixedList.m in Sources */,
+				F74A917824C1E19800FEE8F1 /* IDPaymentItemDisplayHints.m in Sources */,
+				F74A8EE824C1BF0A00FEE8F1 /* IDAFNetworkingWrapper.m in Sources */,
+				F74A8F4E24C1D99200FEE8F1 /* IDValidationError.m in Sources */,
+				F74A917D24C1E19800FEE8F1 /* IDAccountOnFile.m in Sources */,
+				F74A8D1D24C1B7CA00FEE8F1 /* IDBasicPaymentProductConverter.m in Sources */,
+				F74A8F7E24C1DC8B00FEE8F1 /* IDValidators.m in Sources */,
+				F74A8D0F24C1B7CA00FEE8F1 /* IDPaymentContextConverter.m in Sources */,
+				F74A919724C1E19800FEE8F1 /* IDAccountOnFileDisplayHints.m in Sources */,
+				F74A917324C1E19800FEE8F1 /* IDPaymentProductField.m in Sources */,
+				F74A8D1524C1B7CA00FEE8F1 /* IDBasicPaymentItemConverter.m in Sources */,
+				F74A919324C1E19800FEE8F1 /* IDAccountsOnFile.m in Sources */,
+				F74A8F1E24C1D88500FEE8F1 /* IDPaymentRequest.m in Sources */,
+				F74A8D2E24C1BB7F00FEE8F1 /* IDJOSEEncryptor.m in Sources */,
+				F74A918F24C1E19800FEE8F1 /* IDFormElement.m in Sources */,
+				F74A8F0124C1C77200FEE8F1 /* IDPaymentAmountOfMoney.m in Sources */,
+				F74A8F4624C1D99200FEE8F1 /* IDValidationErrorLuhn.m in Sources */,
+				F74A919424C1E19800FEE8F1 /* IDLabelTemplateItem.m in Sources */,
+				F74A918C24C1E19800FEE8F1 /* IDPaymentItems.m in Sources */,
+				F74A917024C1E19800FEE8F1 /* IDBasicPaymentProduct.m in Sources */,
+				F74A8FAD24C1E15A00FEE8F1 /* IDDisplayElementsConverter.m in Sources */,
+				F74A8F5424C1D99200FEE8F1 /* IDValidationErrorIsRequired.m in Sources */,
+				F74A8D2224C1B7CA00FEE8F1 /* IDPaymentItemConverter.m in Sources */,
+				F74A8CF224C1B6F100FEE8F1 /* IDBase64.m in Sources */,
+				F74A8EFD24C1C75C00FEE8F1 /* IDPaymentContext.m in Sources */,
+				F74A8F7924C1DC8B00FEE8F1 /* IDValidator.m in Sources */,
+				F74A8EF024C1BF4000FEE8F1 /* IDNetworkingActivityConsoleLogger.m in Sources */,
+				F74A8CEA24C1A51C00FEE8F1 /* IDC2SCommunicator.m in Sources */,
+				F74A918424C1E19800FEE8F1 /* IDPaymentProductNetworks.m in Sources */,
+				F74A8F1524C1D79400FEE8F1 /* IDIINDetailsResponse.m in Sources */,
+				F74A8CE624C1A45000FEE8F1 /* IDC2SCommunicatorConfiguration.m in Sources */,
+				F74A918A24C1E19800FEE8F1 /* IDBasicPaymentProductGroups.m in Sources */,
+				F74A8EEC24C1BF2700FEE8F1 /* IDNetworkingActivityLogger.m in Sources */,
+				F74A917524C1E19800FEE8F1 /* IDAccountOnFileAttribute.m in Sources */,
+				F74A8D2A24C1BB1300FEE8F1 /* IDEncryptor.m in Sources */,
+				F74A8D1B24C1B7CA00FEE8F1 /* IDBasicPaymentProductsConverter.m in Sources */,
+				F74A916F24C1E19800FEE8F1 /* IDLabelTemplate.m in Sources */,
+				F74A918624C1E19800FEE8F1 /* IDPaymentProductFields.m in Sources */,
+				F74A8F7D24C1DC8B00FEE8F1 /* IDValidatorRegularExpression.m in Sources */,
+				F74A8FA924C1E15A00FEE8F1 /* IDDisplayElement.m in Sources */,
+				F74A8F8524C1DC8B00FEE8F1 /* IDValidatorTermsAndConditions.m in Sources */,
+				F74A8D1F24C1B7CA00FEE8F1 /* IDIINDetailsResponseConverter.m in Sources */,
+				F74A8F1924C1D7F600FEE8F1 /* IDIINDetail.m in Sources */,
+				F74A8F4524C1D99200FEE8F1 /* IDValidationErrorExpirationDate.m in Sources */,
+				F74A918024C1E19800FEE8F1 /* IDPaymentProductFieldDisplayHints.m in Sources */,
+				F74A8F5324C1D99200FEE8F1 /* IDValidationErrorNumericString.m in Sources */,
+				F74A8F4724C1D99200FEE8F1 /* IDValidationErrorLength.m in Sources */,
+				F74A918324C1E19800FEE8F1 /* IDPaymentProduct.m in Sources */,
+				F74A8F5B24C1D99200FEE8F1 /* IDValidationErrorInteger.m in Sources */,
+				F74A8FA124C1E15A00FEE8F1 /* IDPaymentProduct302SpecificData.m in Sources */,
+				F74A8CDE24C1A30900FEE8F1 /* IDUtil.m in Sources */,
+				F74A8D4024C1BCF100FEE8F1 /* IDStringFormatter.m in Sources */,
+				F74A8F8E24C1DC8B00FEE8F1 /* IDValidatorEmailAddress.m in Sources */,
+				F74A8F5224C1D99200FEE8F1 /* IDValidationErrorIBAN.m in Sources */,
+				F74A8F4824C1D99200FEE8F1 /* IDValidationErrorAllowed.m in Sources */,
+				F74A8F2224C1D90D00FEE8F1 /* IDPreparedPaymentRequest.m in Sources */,
+				F74A919124C1E19800FEE8F1 /* IDPaymentProductGroup.m in Sources */,
+				F74A8F2624C1D94400FEE8F1 /* IDPublicKeyResponse.m in Sources */,
+				F74A8CE224C1A3C700FEE8F1 /* IDAssetManager.m in Sources */,
+				F74A8D1424C1B7CA00FEE8F1 /* IDPaymentProductConverter.m in Sources */,
+				F74A917124C1E19800FEE8F1 /* IDBasicPaymentProducts.m in Sources */,
+				F74A8EE424C1BEF400FEE8F1 /* IDNetworkingWrapper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F74A8CBB24C19D7400FEE8F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F739BB5824C582F100FFE16B /* IDJOSEEncryptorTestCase.m in Sources */,
+				F739BB8524C58E6600FFE16B /* IDPaymentProductFieldTestCase.m in Sources */,
+				F739BB5024C5817B00FFE16B /* IDPaymentGroupConverterTestCase.m in Sources */,
+				F74A91B324C3014600FEE8F1 /* IDStubUtil.m in Sources */,
+				F739BB8624C58E6600FFE16B /* IDValidatorExpirationDateTestCase.m in Sources */,
+				F739BB5E24C58D8100FFE16B /* IDJSONTestCase.m in Sources */,
+				F739BB8F24C58E6600FFE16B /* IDValidatorLengthTestCase.m in Sources */,
+				F739BB8C24C58E6600FFE16B /* IDAccountsOnFileTestCase.m in Sources */,
+				F739BB8924C58E6600FFE16B /* IDPaymentRequestTestCase.m in Sources */,
+				F739BB8324C58E6600FFE16B /* IDValidatorRangeTestCase.m in Sources */,
+				F739BB5A24C5834500FFE16B /* IDEncryptorTestCase.m in Sources */,
+				F739BB4C24C57CE200FFE16B /* IDBasicPaymentGroupConverterTestCase.m in Sources */,
+				F739BB8224C58E6600FFE16B /* IDPaymentProductsTestCase.m in Sources */,
+				F739BB8824C58E6600FFE16B /* IDAccountOnFileAttributesTestCase.m in Sources */,
+				F739BB5624C582AA00FFE16B /* IDPaymentProductsConverterTestCase.m in Sources */,
+				F74A91AB24C2F5A400FEE8F1 /* IDC2SCommunicatorConfigurationTestCase.m in Sources */,
+				F739BB5224C5823F00FFE16B /* IDPaymentGroupsConverterTestCase.m in Sources */,
+				F739BB8E24C58E6600FFE16B /* IDLabelTemplateTestCase.m in Sources */,
+				F739BB8024C58E6600FFE16B /* IDAccountOnFileTestCase.m in Sources */,
+				F739BB8A24C58E6600FFE16B /* IDValidatorFixedListTestCase.m in Sources */,
+				F739BB8424C58E6600FFE16B /* IDValidatorEmailAddressTestCase.m in Sources */,
+				F74A91A924C2F54F00FEE8F1 /* IDUtilTestCase.m in Sources */,
+				F739BB8B24C58E6600FFE16B /* IDBasicPaymentProductTestCase.m in Sources */,
+				F739BB9124C58E6600FFE16B /* IDPaymentProductTestCase.m in Sources */,
+				F739BB9024C58E6600FFE16B /* IDValidatorLuhnTestCase.m in Sources */,
+				F739BB6C24C58DF900FFE16B /* IDNetworkingWrapperTestCase.m in Sources */,
+				F739BB5424C5827500FFE16B /* IDPaymentProductConverterTestCase.m in Sources */,
+				F739BB8724C58E6600FFE16B /* IDPaymentProductFieldsTestCase.m in Sources */,
+				F739BB8124C58E6600FFE16B /* IDValidatorRegularExpressionTestCase.m in Sources */,
+				F739BB5C24C58D4E00FFE16B /* IDStringFormatterTestCase.m in Sources */,
+				F739BB4A24C57C6000FFE16B /* IDBase64TestCase.m in Sources */,
+				F739BB4E24C5814600FFE16B /* IDBasicPaymentProductConverterTestCase.m in Sources */,
+				F74A91AD24C2F5E700FEE8F1 /* IDC2SCommunicatorTestCase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F74A8CC224C19D7400FEE8F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F74A8CB524C19D7400FEE8F1 /* IngenicoDirectSDK */;
+			targetProxy = F74A8CC124C19D7400FEE8F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F74A8CC824C19D7400FEE8F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F74A8CC924C19D7400FEE8F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F74A8CCB24C19D7400FEE8F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = IngenicoDirectSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ingenicodirect.IngenicoDirectSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F74A8CCC24C19D7400FEE8F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = IngenicoDirectSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ingenicodirect.IngenicoDirectSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F74A8CCE24C19D7400FEE8F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IngenicoDirectSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ingenicodirect.IngenicoDirectSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F74A8CCF24C19D7400FEE8F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IngenicoDirectSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ingenicodirect.IngenicoDirectSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F74A8CB024C19D7400FEE8F1 /* Build configuration list for PBXProject "IngenicoDirectSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F74A8CC824C19D7400FEE8F1 /* Debug */,
+				F74A8CC924C19D7400FEE8F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F74A8CCA24C19D7400FEE8F1 /* Build configuration list for PBXNativeTarget "IngenicoDirectSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F74A8CCB24C19D7400FEE8F1 /* Debug */,
+				F74A8CCC24C19D7400FEE8F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F74A8CCD24C19D7400FEE8F1 /* Build configuration list for PBXNativeTarget "IngenicoDirectSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F74A8CCE24C19D7400FEE8F1 /* Debug */,
+				F74A8CCF24C19D7400FEE8F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F74A8CAD24C19D7400FEE8F1 /* Project object */;
+}
