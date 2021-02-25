@@ -33,7 +33,6 @@
     }
     for (IDBasicPaymentProduct *product in paymentProducts.paymentProducts) {
         XCTAssertNotNil(product.identifier, @"Payment product has no identifier");
-        XCTAssertFalse(product.autoTokenized, @"Product's autoTokenized property is not false");
         XCTAssertNotNil(product.displayHints, @"Payment product has no displayHints");
         XCTAssertNotNil(product.displayHints.logoPath, @"Payment product has no logo path in displayHints");
         if (product.accountsOnFile != nil) {

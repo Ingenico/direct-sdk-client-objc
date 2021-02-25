@@ -26,14 +26,11 @@ FOUNDATION_EXPORT const unsigned char IngenicoDirectSDKVersionString[];
 
 #import <IngenicoDirectSDK/IDBasicPaymentItemConverter.h>
 #import <IngenicoDirectSDK/IDBasicPaymentProductConverter.h>
-#import <IngenicoDirectSDK/IDBasicPaymentProductGroupConverter.h>
 #import <IngenicoDirectSDK/IDBasicPaymentProductsConverter.h>
 #import <IngenicoDirectSDK/IDIINDetailsResponseConverter.h>
 #import <IngenicoDirectSDK/IDPaymentContextConverter.h>
 #import <IngenicoDirectSDK/IDPaymentItemConverter.h>
 #import <IngenicoDirectSDK/IDPaymentProductConverter.h>
-#import <IngenicoDirectSDK/IDPaymentProductGroupConverter.h>
-#import <IngenicoDirectSDK/IDPaymentProductGroupsConverter.h>
 
 #import <IngenicoDirectSDK/IDEncryptor.h>
 #import <IngenicoDirectSDK/IDJOSEEncryptor.h>
@@ -65,8 +62,6 @@ FOUNDATION_EXPORT const unsigned char IngenicoDirectSDKVersionString[];
 #import <IngenicoDirectSDK/IDIINDetail.h>
 
 #import <IngenicoDirectSDK/IDBasicPaymentProduct.h>
-#import <IngenicoDirectSDK/IDBasicPaymentProductGroup.h>
-#import <IngenicoDirectSDK/IDBasicPaymentProductGroups.h>
 #import <IngenicoDirectSDK/IDBasicPaymentProducts.h>
 #import <IngenicoDirectSDK/IDDataRestrictions.h>
 #import <IngenicoDirectSDK/IDDisplayElement.h>
@@ -82,7 +77,6 @@ FOUNDATION_EXPORT const unsigned char IngenicoDirectSDKVersionString[];
 #import <IngenicoDirectSDK/IDPaymentProductField.h>
 #import <IngenicoDirectSDK/IDPaymentProductFieldDisplayHints.h>
 #import <IngenicoDirectSDK/IDPaymentProductFields.h>
-#import <IngenicoDirectSDK/IDPaymentProductGroup.h>
 #import <IngenicoDirectSDK/IDPaymentProductNetworks.h>
 #import <IngenicoDirectSDK/IDToolTip.h>
 

@@ -8,10 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F739BB4A24C57C6000FFE16B /* IDBase64TestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BB4924C57C6000FFE16B /* IDBase64TestCase.m */; };
-		F739BB4C24C57CE200FFE16B /* IDBasicPaymentGroupConverterTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BB4B24C57CE200FFE16B /* IDBasicPaymentGroupConverterTestCase.m */; };
 		F739BB4E24C5814600FFE16B /* IDBasicPaymentProductConverterTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BB4D24C5814600FFE16B /* IDBasicPaymentProductConverterTestCase.m */; };
-		F739BB5024C5817B00FFE16B /* IDPaymentGroupConverterTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BB4F24C5817B00FFE16B /* IDPaymentGroupConverterTestCase.m */; };
-		F739BB5224C5823F00FFE16B /* IDPaymentGroupsConverterTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BB5124C5823F00FFE16B /* IDPaymentGroupsConverterTestCase.m */; };
 		F739BB5424C5827500FFE16B /* IDPaymentProductConverterTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BB5324C5827500FFE16B /* IDPaymentProductConverterTestCase.m */; };
 		F739BB5624C582AA00FFE16B /* IDPaymentProductsConverterTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BB5524C582AA00FFE16B /* IDPaymentProductsConverterTestCase.m */; };
 		F739BB5824C582F100FFE16B /* IDJOSEEncryptorTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F739BB5724C582F100FFE16B /* IDJOSEEncryptorTestCase.m */; };
@@ -233,10 +230,7 @@
 
 /* Begin PBXFileReference section */
 		F739BB4924C57C6000FFE16B /* IDBase64TestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDBase64TestCase.m; sourceTree = "<group>"; };
-		F739BB4B24C57CE200FFE16B /* IDBasicPaymentGroupConverterTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDBasicPaymentGroupConverterTestCase.m; sourceTree = "<group>"; };
 		F739BB4D24C5814600FFE16B /* IDBasicPaymentProductConverterTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDBasicPaymentProductConverterTestCase.m; sourceTree = "<group>"; };
-		F739BB4F24C5817B00FFE16B /* IDPaymentGroupConverterTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDPaymentGroupConverterTestCase.m; sourceTree = "<group>"; };
-		F739BB5124C5823F00FFE16B /* IDPaymentGroupsConverterTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDPaymentGroupsConverterTestCase.m; sourceTree = "<group>"; };
 		F739BB5324C5827500FFE16B /* IDPaymentProductConverterTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDPaymentProductConverterTestCase.m; sourceTree = "<group>"; };
 		F739BB5524C582AA00FFE16B /* IDPaymentProductsConverterTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDPaymentProductsConverterTestCase.m; sourceTree = "<group>"; };
 		F739BB5724C582F100FFE16B /* IDJOSEEncryptorTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDJOSEEncryptorTestCase.m; sourceTree = "<group>"; };
@@ -579,10 +573,7 @@
 		F74A91A124C2F4EC00FEE8F1 /* Converters */ = {
 			isa = PBXGroup;
 			children = (
-				F739BB4B24C57CE200FFE16B /* IDBasicPaymentGroupConverterTestCase.m */,
 				F739BB4D24C5814600FFE16B /* IDBasicPaymentProductConverterTestCase.m */,
-				F739BB4F24C5817B00FFE16B /* IDPaymentGroupConverterTestCase.m */,
-				F739BB5124C5823F00FFE16B /* IDPaymentGroupsConverterTestCase.m */,
 				F739BB5324C5827500FFE16B /* IDPaymentProductConverterTestCase.m */,
 				F739BB5524C582AA00FFE16B /* IDPaymentProductsConverterTestCase.m */,
 			);
@@ -1243,7 +1234,6 @@
 			files = (
 				F739BB5824C582F100FFE16B /* IDJOSEEncryptorTestCase.m in Sources */,
 				F739BB8524C58E6600FFE16B /* IDPaymentProductFieldTestCase.m in Sources */,
-				F739BB5024C5817B00FFE16B /* IDPaymentGroupConverterTestCase.m in Sources */,
 				F74A91B324C3014600FEE8F1 /* IDStubUtil.m in Sources */,
 				F739BB8624C58E6600FFE16B /* IDValidatorExpirationDateTestCase.m in Sources */,
 				F739BB5E24C58D8100FFE16B /* IDJSONTestCase.m in Sources */,
@@ -1252,12 +1242,10 @@
 				F739BB8924C58E6600FFE16B /* IDPaymentRequestTestCase.m in Sources */,
 				F739BB8324C58E6600FFE16B /* IDValidatorRangeTestCase.m in Sources */,
 				F739BB5A24C5834500FFE16B /* IDEncryptorTestCase.m in Sources */,
-				F739BB4C24C57CE200FFE16B /* IDBasicPaymentGroupConverterTestCase.m in Sources */,
 				F739BB8224C58E6600FFE16B /* IDPaymentProductsTestCase.m in Sources */,
 				F739BB8824C58E6600FFE16B /* IDAccountOnFileAttributesTestCase.m in Sources */,
 				F739BB5624C582AA00FFE16B /* IDPaymentProductsConverterTestCase.m in Sources */,
 				F74A91AB24C2F5A400FEE8F1 /* IDC2SCommunicatorConfigurationTestCase.m in Sources */,
-				F739BB5224C5823F00FFE16B /* IDPaymentGroupsConverterTestCase.m in Sources */,
 				F739BB8E24C58E6600FFE16B /* IDLabelTemplateTestCase.m in Sources */,
 				F739BB8024C58E6600FFE16B /* IDAccountOnFileTestCase.m in Sources */,
 				F739BB8A24C58E6600FFE16B /* IDValidatorFixedListTestCase.m in Sources */,
